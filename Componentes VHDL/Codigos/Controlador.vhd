@@ -1,0 +1,60 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.all;
+
+ENTITY controlador is
+    port(
+		  
+        --entradas
+
+        op_code: in std_logic_vector(1 downto 0);
+        --saidas
+        Reg_dst: out std_logic;
+        Reg_Write: out std_logic;
+        ALU_src: out std_logic;
+        ALU_op: out std_logic;
+        Mem_ToReg: out std_logic;
+        Mem_Write: out std_logic
+    );
+END controlador;
+
+ARCHITECTURE Main OF controlador IS
+
+BEGIN 
+    PROCESS(op_code)
+    BEGIN
+        CASE op_code IS
+            when "00"   => --add
+                Reg_dst <= '1';
+                Reg_Write <= '1';
+                ALU_src <= '0';
+                ALU_op <= '0';
+                Mem_ToReg <= '0';
+                Mem_Write <= '0';
+
+            when "01"   => --sub
+                Reg_dst <= '1';
+                Reg_Write <= '1';
+                ALU_src <= '0';
+                ALU_op <= '1';
+                Mem_ToReg <= '0';
+                Mem_Write <= '0';
+
+            when "10"   => --lw
+                Reg_dst <= '0';
+                Reg_Write <= '1';
+                ALU_src <= '1';
+                ALU_op <= '0';
+                Mem_ToReg <= '1';
+                Mem_Write <= '0';
+
+            when "11"   => --sw
+                Reg_dst <= '0';
+                Reg_Write <= '0';
+                ALU_src <= '1';
+                ALU_op <= '0';
+                Mem_ToReg <= '0';
+                Mem_Write <= '1';   
+
+        END CASE;
+    END PROCESS;
+END Main;

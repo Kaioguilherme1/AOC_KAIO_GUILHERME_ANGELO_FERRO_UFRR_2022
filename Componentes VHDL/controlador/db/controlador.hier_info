@@ -1,0 +1,19 @@
+|controlador
+op_code[0] => Mux0.IN5
+op_code[0] => Mux1.IN5
+op_code[0] => Mux2.IN5
+op_code[0] => Mux3.IN5
+op_code[1] => Mux0.IN4
+op_code[1] => Mux1.IN4
+op_code[1] => Mux2.IN4
+op_code[1] => Mux3.IN4
+op_code[1] => ALU_src.DATAIN
+op_code[1] => Reg_dst.DATAIN
+Reg_dst << op_code[1].DB_MAX_OUTPUT_PORT_TYPE
+Reg_Write << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+ALU_src << op_code[1].DB_MAX_OUTPUT_PORT_TYPE
+ALU_op << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Mem_ToReg << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Mem_Write << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+
+

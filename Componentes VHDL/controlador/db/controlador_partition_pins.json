@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Reg_dst",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_Write",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_src",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_op",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_ToReg",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_Write",
+					"strict" : false
+				},
+				{
+					"name" : "op_code[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_code[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
