@@ -1,60 +1,35 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.all;
+--ULA com 4 funções
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_signed.all;
+use IEEE.numeric_std.all;
 
-ENTITY controlador is
+--Entidade
+
+ENTITY ULA IS
     port(
-		  
-        --entradas
-
-        op_code: in std_logic_vector(1 downto 0);
-        --saidas
-        Reg_dst: out std_logic;
-        Reg_Write: out std_logic;
-        ALU_src: out std_logic;
-        ALU_op: out std_logic;
-        Mem_ToReg: out std_logic;
-        Mem_Write: out std_logic
+        a,b : in std_logic_vector(7 downto 0); -- src1, src2
+        alu_op : in std_logic_vector(1 downto 0); --seletor de funcao
+        alu_result: out std_logic_vector(7 downto 0) -- saida do resultado
     );
-END controlador;
+END ULA;
 
-ARCHITECTURE Main OF controlador IS
-
-BEGIN 
-    PROCESS(op_code)
-    BEGIN
-        CASE op_code IS
-            when "00"   => --add
-                Reg_dst <= '1';
-                Reg_Write <= '1';
-                ALU_src <= '0';
-                ALU_op <= '0';
-                Mem_ToReg <= '0';
-                Mem_Write <= '0';
-
-            when "01"   => --sub
-                Reg_dst <= '1';
-                Reg_Write <= '1';
-                ALU_src <= '0';
-                ALU_op <= '1';
-                Mem_ToReg <= '0';
-                Mem_Write <= '0';
-
-            when "10"   => --lw
-                Reg_dst <= '0';
-                Reg_Write <= '1';
-                ALU_src <= '1';
-                ALU_op <= '0';
-                Mem_ToReg <= '1';
-                Mem_Write <= '0';
-
-            when "11"   => --sw
-                Reg_dst <= '0';
-                Reg_Write <= '0';
-                ALU_src <= '1';
-                ALU_op <= '0';
-                Mem_ToReg <= '0';
-                Mem_Write <= '1';   
-
-        END CASE;
-    END PROCESS;
-END Main;
+ARCHITECTURE Main OF ULA IS
+SIGNAL result: std_logic_vector(7 downto 0);
+signal a_sig, b_sig: unsigned(n-1 downto 0)
+BEGIN
+    process(alu_op,a,b)
+    begin
+        case alu_op is
+            when "00" =>
+                result <= a + b; -- add
+            when "01" =>
+                result <= a - b; -- sub
+            when "10" => 
+                result<= std_logic_vector(a * b);
+            
+            when others => result <= a + b; -- add
+        end case;
+    end process;
+alu_result <= result;
+end Main;

@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-# Date created = 18:57:44  February 21, 2022
+# Date created = 14:58:35  February 22, 2022
 #
 # -------------------------------------------------------------------------- #
 #
@@ -41,7 +41,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
 set_global_assignment -name TOP_LEVEL_ENTITY controlador
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:57:44  FEBRUARY 21, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:58:35  FEBRUARY 22, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256

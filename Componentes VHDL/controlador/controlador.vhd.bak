@@ -2,10 +2,11 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.all;
 
 ENTITY controlador is
-    port{
+    port(
+		  
         --entradas
 
-        op_code: in std_logic_vector(7 downto 0);
+        op_code: in std_logic_vector(1 downto 0);
         --saidas
         Reg_dst: out std_logic;
         Reg_Write: out std_logic;
@@ -13,7 +14,7 @@ ENTITY controlador is
         ALU_op: out std_logic;
         Mem_ToReg: out std_logic;
         Mem_Write: out std_logic
-    };
+    );
 END controlador;
 
 ARCHITECTURE Main OF controlador IS
@@ -55,4 +56,4 @@ BEGIN
 
         END CASE;
     END PROCESS;
-END Main;
+END ARCHITECTURE Main;

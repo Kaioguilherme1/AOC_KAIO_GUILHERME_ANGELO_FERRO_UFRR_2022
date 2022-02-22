@@ -1,0 +1,79 @@
+# do controlador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/controlador/controlador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:07:10 on Feb 22,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/controlador/controlador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlador
+# -- Compiling architecture Behavioral of controlador
+# End time: 15:07:10 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.controlador
+# vsim work.controlador 
+# Start time: 15:07:13 on Feb 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.controlador(behavioral)
+vsim rtl_work.controlador
+# End time: 15:08:11 on Feb 22,2022, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 0
+# vsim rtl_work.controlador 
+# Start time: 15:08:11 on Feb 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading rtl_work.controlador(behavioral)
+add wave -position insertpoint sim:/controlador/*
+add list \
+sim:/controlador/opcode 
+vsim work.controlador
+# End time: 15:11:37 on Feb 22,2022, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 0
+# vsim work.controlador 
+# Start time: 15:11:37 on Feb 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.controlador(behavioral)
+add wave -position insertpoint  \
+sim:/controlador/opcode
+wave create -driver freeze -pattern constant -value 101 -range 2 0 -starttime 0ps -endtime 1000ps sim:/controlador/opcode
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# controlador
+add wave -position insertpoint  \
+sim:/controlador/reg_dst
+add wave -position insertpoint  \
+sim:/controlador/reg_write
+add wave -position insertpoint  \
+sim:/controlador/sign_or_zero
+add wave -position insertpoint  \
+sim:/controlador/mem_write
+add wave -position insertpoint  \
+sim:/controlador/mem_to_reg
+add wave -position insertpoint  \
+sim:/controlador/mem_read
+add wave -position insertpoint  \
+sim:/controlador/jump
+add wave -position insertpoint  \
+sim:/controlador/branch
+add wave -position insertpoint  \
+sim:/controlador/alu_src
+add wave -position insertpoint  \
+sim:/controlador/alu_op
+run
+# End time: 15:17:04 on Feb 22,2022, Elapsed time: 0:05:27
+# Errors: 0, Warnings: 0

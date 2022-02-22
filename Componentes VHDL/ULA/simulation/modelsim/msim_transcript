@@ -1,0 +1,56 @@
+# do ULA_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/ULA/ULA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:55:43 on Feb 22,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/ULA/ULA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ULA
+# -- Compiling architecture Main of ULA
+# End time: 18:55:44 on Feb 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.ula
+# vsim work.ula 
+# Start time: 18:55:48 on Feb 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ula(main)
+wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 00001100 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/a
+wave create -driver freeze -pattern constant -value 00001110 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/b
+add wave -position insertpoint  \
+sim:/ula/alu_result
+run
+run -continue
+wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
+# /ula/alu_op already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+add wave -position insertpoint  \
+sim:/ula/alu_op
+wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
+add wave -position 0 -autoscale 1 -format Literal -height 19 -editable 2 Edit:/ula/alu_op
+run
+run
+# End time: 19:00:31 on Feb 22,2022, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 0

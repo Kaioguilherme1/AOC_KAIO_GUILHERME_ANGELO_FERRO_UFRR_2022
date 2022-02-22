@@ -1,60 +1,136 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.all;
+-- fpga4student.com: FPGA projects, Verilog projects, VHDL projects
+-- VHDL project: VHDL code for single-cycle MIPS Processor
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+-- VHDL code for Control Unit of the MIPS Processor
+entity controlador is
+port (
+  opcode: in std_logic_vector(2 downto 0);
+  reset: in std_logic;
+  reg_dst,mem_to_reg,alu_op: out std_logic_vector(1 downto 0);
+  jump,branch,mem_read,mem_write,alu_src,reg_write,sign_or_zero: out std_logic
+ );
+end controlador;
 
-ENTITY controlador is
-    port(
-		  
-        --entradas
+architecture Behavioral of controlador is
 
-        op_code: in std_logic_vector(1 downto 0);
-        --saidas
-        Reg_dst: out std_logic;
-        Reg_Write: out std_logic;
-        ALU_src: out std_logic;
-        ALU_op: out std_logic;
-        Mem_ToReg: out std_logic;
-        Mem_Write: out std_logic
-    );
-END controlador;
+begin
+process(reset,opcode)
+begin
+ if(reset = '1') then
+   reg_dst <= "00";
+   mem_to_reg <= "00";
+   alu_op <= "00";
+   jump <= '0';
+   branch <= '0';
+   mem_read <= '0';
+   mem_write <= '0';
+   alu_src <= '0';
+   reg_write <= '0';
+   sign_or_zero <= '1';
+ else 
+ case opcode is
+  when "000" => -- add
+    reg_dst <= "01";
+    mem_to_reg <= "00";
+    alu_op <= "00";
+    jump <= '0';
+    branch <= '0';
+    mem_read <= '0';
+    mem_write <= '0';
+    alu_src <= '0';
+    reg_write <= '1';
+    sign_or_zero <= '1';
+  when "001" => -- sliu
+   reg_dst <= "00";
+   mem_to_reg <= "00";
+   alu_op <= "10";
+   jump <= '0';
+   branch <= '0';
+   mem_read <= '0';
+   mem_write <= '0';
+   alu_src <= '1';
+   reg_write <= '1';
+   sign_or_zero <= '0';
+  when "010" => -- j
+   reg_dst <= "00";
+   mem_to_reg <= "00";
+   alu_op <= "00";
+   jump <= '1';
+   branch <= '0';
+   mem_read <= '0';
+   mem_write <= '0';
+   alu_src <= '0';
+   reg_write <= '0';
+   sign_or_zero <= '1';
+ when "011" =>-- jal
+   reg_dst <= "10";
+   mem_to_reg <= "10";
+   alu_op <= "00";
+   jump <= '1';
+   branch <=  '0';
+   mem_read <=  '0';
+   mem_write <=  '0';
+   alu_src <= '0';
+   reg_write <=  '1';
+   sign_or_zero <= '1';
+ when "100" =>-- lw
+   reg_dst <= "00";
+   mem_to_reg <= "01";
+   alu_op <= "11";
+   jump <= '0';
+   branch <= '0';
+   mem_read <= '1';
+   mem_write <= '0';
+   alu_src <= '1';
+   reg_write <= '1';
+   sign_or_zero <= '1';
+ when "101" => -- sw
+   reg_dst <= "00";
+   mem_to_reg <= "00";
+   alu_op <= "11";
+   jump <= '0';
+   branch <= '0';
+   mem_read <= '0';
+   mem_write <= '1';
+   alu_src <= '1';
+   reg_write <= '0';
+   sign_or_zero <= '1';
+ when "110" => -- beq
+   reg_dst <= "00";
+   mem_to_reg <= "00";
+   alu_op <= "01";
+   jump <= '0';
+   branch <= '1';
+   mem_read <= '0';
+   mem_write <= '0';
+   alu_src <= '0';
+   reg_write <= '0';
+   sign_or_zero <= '1';
+ when "111" =>-- addi
+   reg_dst <= "00";
+   mem_to_reg <= "00";
+   alu_op <= "11";
+   jump <= '0';
+   branch <= '0';
+   mem_read <= '0';
+   mem_write <= '0';
+   alu_src <= '1';
+   reg_write <= '1';
+   sign_or_zero <= '1';
+ when others =>   
+    reg_dst <= "01";
+    mem_to_reg <= "00";
+    alu_op <= "00";
+    jump <= '0';
+    branch <= '0';
+    mem_read <= '0';
+    mem_write <= '0';
+    alu_src <= '0';
+    reg_write <= '1';
+    sign_or_zero <= '1';
+ end case;
+ end if;
+end process;
 
-ARCHITECTURE Main OF controlador IS
-
-BEGIN 
-    PROCESS(op_code)
-    BEGIN
-        CASE op_code IS
-            when "00"   => --add
-                Reg_dst <= '1';
-                Reg_Write <= '1';
-                ALU_src <= '0';
-                ALU_op <= '0';
-                Mem_ToReg <= '0';
-                Mem_Write <= '0';
-
-            when "01"   => --sub
-                Reg_dst <= '1';
-                Reg_Write <= '1';
-                ALU_src <= '0';
-                ALU_op <= '1';
-                Mem_ToReg <= '0';
-                Mem_Write <= '0';
-
-            when "10"   => --lw
-                Reg_dst <= '0';
-                Reg_Write <= '1';
-                ALU_src <= '1';
-                ALU_op <= '0';
-                Mem_ToReg <= '1';
-                Mem_Write <= '0';
-
-            when "11"   => --sw
-                Reg_dst <= '0';
-                Reg_Write <= '0';
-                ALU_src <= '1';
-                ALU_op <= '0';
-                Mem_ToReg <= '0';
-                Mem_Write <= '1';   
-
-        END CASE;
-    END PROCESS;
-END Main;
+end Behavioral;
