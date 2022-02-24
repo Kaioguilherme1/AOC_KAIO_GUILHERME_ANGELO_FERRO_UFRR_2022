@@ -1,0 +1,59 @@
+# do banco_regs_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:53:23 on Feb 23,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity banco_regs
+# -- Compiling architecture Main of banco_regs
+# End time: 17:53:23 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.banco_regs
+# vsim work.banco_regs 
+# Start time: 17:53:28 on Feb 23,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.banco_regs(main)
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_en
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_addr
+wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_read_addr_1
+wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_read_addr_2
+wave create -driver freeze -pattern constant -value 00001010 -range 7 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_data
+add dataflow  \
+sim:/banco_regs/reg_array(1)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/banco_regs/reg_read_data_1
+add wave -position insertpoint  \
+sim:/banco_regs/reg_read_data_2
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_addr
+add wave -position 3 -autoscale 1 -format Literal -height 19 -editable 2 Edit:/banco_regs/reg_write_addr
+wave create -driver freeze -pattern constant -value 00001111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_data
+add wave -position 7 -autoscale 1 -format Literal -height 19 -editable 2 Edit:/banco_regs/reg_write_data
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/kaio/Documentos/Componentes/banco_regs/simulation/modelsim/wave.do
+wave editwrite -file /home/kaio/Documentos/Componentes/banco_regs/simulation/modelsim/wave.do -append
+# End time: 18:00:05 on Feb 23,2022, Elapsed time: 0:06:37
+# Errors: 0, Warnings: 0

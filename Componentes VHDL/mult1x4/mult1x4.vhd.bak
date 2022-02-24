@@ -1,0 +1,33 @@
+-- controlador 1x4
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity mult1x4 is
+    port (
+        
+        controle: in std_logic_vector(1 downto 0);
+        A: in std_logic_vector(7 downto 0);
+        B: in std_logic_vector(7 downto 0);
+        C: in std_logic_vector(7 downto 0);
+        D: in std_logic_vector(7 downto 0);
+        saida:    out std_logic_vector(7 downto 0); 
+        
+    );
+end mult1x4;
+
+architecture Main of mult1x4 is
+begin
+
+
+    process(controle, A, B, C, D, saida)
+    begin
+        case controle is
+            when "00" => saida <= A;
+            when "01" => saida <= B;
+            when "10" => saida <= C;
+            when "11" => saida <= D;
+        end case;
+    end process;
+
+end Main;

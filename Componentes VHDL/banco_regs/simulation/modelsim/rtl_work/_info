@@ -1,0 +1,54 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kaio/Documentos/Componentes/banco_regs/simulation/modelsim
+Ebanco_regs
+Z1 w1645653184
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8/home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd
+Z6 F/home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd
+l0
+L8 1
+V`hT@_Jz5Eka`U[;b3mSg12
+!s100 DESKifT`gLOQPz6iiKa4B2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1645653203
+!i10b 1
+Z9 !s108 1645653203.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd|
+!s107 /home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Amain
+R2
+R3
+R4
+DEx4 work 10 banco_regs 0 22 `hT@_Jz5Eka`U[;b3mSg12
+!i122 0
+l23
+L20 16
+VY[n80jbZe;`>d^48@C;2I0
+!s100 zKNcYUOZUmLznje=GfWD>0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 /home/kaio/Documentos/Componentes/banco_regs/banco_regs.vhd|
+!i113 1
+R11
+R12
