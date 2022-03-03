@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ULA
-Wed Feb 23 20:52:01 2022
+Thu Mar  3 16:13:52 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Feb 23 20:52:01 2022       ;
+; Analysis & Elaboration Status ; Successful - Thu Mar  3 16:13:52 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; ULA                                         ;
 ; Top-level Entity Name         ; ULA                                         ;
@@ -161,18 +161,30 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Feb 23 20:51:51 2022
+    Info: Processing started: Thu Mar  3 16:13:41 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ULA.vhd
-    Info (12022): Found design unit 1: ULA-Main File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 15
+    Info (12022): Found design unit 1: ULA-Main File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 16
     Info (12023): Found entity 1: ULA File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 7
 Info (12127): Elaborating entity "ULA" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 797 megabytes
-    Info: Processing ended: Wed Feb 23 20:52:01 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:28
+Warning (10631): VHDL Process Statement warning at ULA.vhd(18): inferring latch(es) for signal or variable "alu_result", which holds its previous value in one or more paths through the process File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Warning (10631): VHDL Process Statement warning at ULA.vhd(18): inferring latch(es) for signal or variable "zero", which holds its previous value in one or more paths through the process File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "zero[0]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "zero[1]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[0]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[1]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[2]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[3]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[4]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[5]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[6]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info (10041): Inferred latch for "alu_result[7]" at ULA.vhd(18) File: /home/kaio/Documentos/Componentes/ULA/ULA.vhd Line: 18
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 789 megabytes
+    Info: Processing ended: Thu Mar  3 16:13:52 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:34
 
 

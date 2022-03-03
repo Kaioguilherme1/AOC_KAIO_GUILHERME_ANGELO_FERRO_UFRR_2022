@@ -11,7 +11,7 @@
 # 
 # vcom -93 -work work {/home/kaio/Documentos/Componentes/ULA/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:59:34 on Feb 23,2022
+# Start time: 16:13:59 on Mar 03,2022
 # vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/ULA/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,33 +20,26 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ULA
 # -- Compiling architecture Main of ULA
-# End time: 16:59:34 on Feb 23,2022, Elapsed time: 0:00:00
+# End time: 16:13:59 on Mar 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.ula
 # vsim work.ula 
-# Start time: 16:59:38 on Feb 23,2022
+# Start time: 16:14:04 on Mar 03,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading work.ula(main)
-wave create -driver freeze -pattern constant -value 00001010 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/b
+wave create -driver freeze -pattern constant -value 00001100 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/a
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern constant -value 00001111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/a
-add wave -position 0 -autoscale 1 -format Literal -height 19 -editable 2 Edit:/ula/a
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
-add wave -position 2 -format Logic -height 19 -editable 2 Edit:/ula/alu_op
+wave create -driver freeze -pattern constant -value 00001100 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/b
+wave create -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
 add wave -position insertpoint  \
 sim:/ula/alu_result
+add wave -position insertpoint  \
+sim:/ula/zero
 run
-wave create -driver freeze -pattern constant -value 00001111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/a
-add wave -position 1 -autoscale 1 -format Literal -height 19 -editable 2 Edit:/ula/a
-wave create -driver freeze -pattern constant -value 00001010 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/b
-add wave -position 2 -autoscale 1 -format Literal -height 19 -editable 2 Edit:/ula/b
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
-add wave -position 2 -format Logic -height 19 -editable 2 Edit:/ula/alu_op
-run
-# End time: 17:08:40 on Feb 23,2022, Elapsed time: 0:09:02
+# End time: 16:19:54 on Mar 03,2022, Elapsed time: 0:05:50
 # Errors: 0, Warnings: 0

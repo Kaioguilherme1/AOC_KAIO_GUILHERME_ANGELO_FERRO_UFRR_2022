@@ -1,0 +1,57 @@
+# do instrucoes_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:57:12 on Mar 03,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity instrucoes
+# -- Compiling architecture Main of instrucoes
+# End time: 17:57:12 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.instrucoes
+# vsim work.instrucoes 
+# Start time: 17:57:16 on Mar 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.instrucoes(main)
+wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/instrucoes/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position insertpoint  \
+sim:/instrucoes/loop_func
+wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/instrucoes/loop_func
+add wave -position insertpoint  \
+sim:/instrucoes/op_code
+add wave -position insertpoint  \
+sim:/instrucoes/reg1
+add wave -position insertpoint  \
+sim:/instrucoes/reg2
+add wave -position insertpoint  \
+sim:/instrucoes/func
+add wave -position insertpoint  \
+sim:/instrucoes/indice
+run
+# ** Fatal: (vsim-3421) Value -1 is out of range 0 to 15.
+#    Time: 500 ps  Iteration: 0  Process: /instrucoes/line__47 File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 53
+# Fatal error in Process line__47 at /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd line 53
+# 
+# HDL call sequence:
+# Stopped at /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd 53 Process line__47
+# 
+# End time: 17:58:35 on Mar 03,2022, Elapsed time: 0:01:19
+# Errors: 1, Warnings: 0

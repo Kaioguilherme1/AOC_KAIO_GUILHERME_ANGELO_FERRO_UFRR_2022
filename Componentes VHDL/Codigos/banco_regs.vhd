@@ -17,7 +17,7 @@ ENTITY banco_regs IS
     );
 END banco_regs;
 
-ARCHITECTURE Main OS banco_regs IS
+ARCHITECTURE Main OF banco_regs IS
 TYPE reg_type IS ARRAY (0 to 3 ) OF std_logic_vector (7 downto 0); -- vetor de regs do tipo vetor de 8 bits
 SIGNAL reg_array: reg_type;
 BEGIN

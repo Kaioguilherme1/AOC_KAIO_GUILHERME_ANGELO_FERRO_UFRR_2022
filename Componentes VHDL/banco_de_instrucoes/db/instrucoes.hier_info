@@ -1,0 +1,29 @@
+|instrucoes
+clk => reg1[1]$latch.LATCH_ENABLE
+clk => reg1[0]$latch.LATCH_ENABLE
+clk => reg2[1]$latch.LATCH_ENABLE
+clk => reg2[0]$latch.LATCH_ENABLE
+clk => func[1]$latch.LATCH_ENABLE
+clk => func[0]$latch.LATCH_ENABLE
+clk => addr_i[1]$latch.LATCH_ENABLE
+clk => addr_i[0]$latch.LATCH_ENABLE
+clk => op_code[0]$latch.LATCH_ENABLE
+clk => op_code[1]$latch.LATCH_ENABLE
+clk => indice[0].LATCH_ENABLE
+clk => indice[1].LATCH_ENABLE
+clk => indice[2].LATCH_ENABLE
+clk => indice[3].LATCH_ENABLE
+loop_func[0] => ~NO_FANOUT~
+loop_func[1] => ~NO_FANOUT~
+op_code[0] <= op_code[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+op_code[1] <= op_code[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+reg1[0] <= reg1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+reg1[1] <= reg1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+reg2[0] <= reg2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+reg2[1] <= reg2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+func[0] <= func[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+func[1] <= func[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+addr_i[0] <= addr_i[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+addr_i[1] <= addr_i[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

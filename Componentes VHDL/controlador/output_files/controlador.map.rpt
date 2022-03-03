@@ -1,5 +1,5 @@
 Analysis & Elaboration report for controlador
-Wed Feb 23 20:45:23 2022
+Thu Mar  3 15:45:48 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Feb 23 20:45:23 2022       ;
+; Analysis & Elaboration Status ; Successful - Thu Mar  3 15:45:48 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; controlador                                 ;
 ; Top-level Entity Name         ; controlador                                 ;
@@ -161,18 +161,18 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Feb 23 20:45:13 2022
+    Info: Processing started: Thu Mar  3 15:45:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off controlador -c controlador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file controlador.vhd
-    Info (12022): Found design unit 1: controlador-Main File: /home/kaio/Documentos/Componentes/controlador/controlador.vhd Line: 17
+    Info (12022): Found design unit 1: controlador-Main File: /home/kaio/Documentos/Componentes/controlador/controlador.vhd Line: 18
     Info (12023): Found entity 1: controlador File: /home/kaio/Documentos/Componentes/controlador/controlador.vhd Line: 5
 Info (12127): Elaborating entity "controlador" for the top level hierarchy
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 797 megabytes
-    Info: Processing ended: Wed Feb 23 20:45:23 2022
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 791 megabytes
+    Info: Processing ended: Thu Mar  3 15:45:48 2022
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:28
 
 

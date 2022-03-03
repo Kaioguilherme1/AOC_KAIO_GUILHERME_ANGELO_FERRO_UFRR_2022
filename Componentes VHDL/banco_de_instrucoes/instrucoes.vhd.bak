@@ -1,0 +1,57 @@
+--Banco De instruções
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_signed.all;
+
+--Entidade
+ENTITY instrucoes IS
+    PORT(
+        loop_func : IN std_logic_vector(1 downto 0);
+        clock:      IN std_logic;
+        reg1:       out std_logic_vector(1 downto 0);
+        reg2:       out std_logic_vector(1 downto 0);
+        op_code:    out std_logic_vector(1 downto 0);
+        func:       out std_logic_vector(1 downto 0);
+        addr_i      out std_logic_vector(3 downto 0);
+    );
+END instrucoes;
+
+ARCHITECTURE Main OF instrucoes IS
+TYPE intrucao_type IS ARRAY (0 to 32 ) OF std_logic_vector (7 downto 0); -- vetor de instruções do tipo vetor de 8 bits
+SIGNAL fila_de_execucao: instrucao_type;
+SIGNAL indice : integer range 0 to 31;
+SIGNAL teste : std_logic_vector(1 downto 0);
+BEGIN
+    indice <= 0;
+    --Local da escrita do codigo
+    fila_de_execucao(0) <= "00011100";
+    fila_de_execucao(1) <= "00000000";
+    fila_de_execucao(2) <= "00000000";
+    fila_de_execucao(3) <= "00000000";
+    fila_de_execucao(4) <= "00000000";
+    fila_de_execucao(5) <= "00000000";
+    fila_de_execucao(6) <= "00000000";
+    fila_de_execucao(7) <= "00000000";
+    fila_de_execucao(8) <= "00000000";
+    fila_de_execucao(9) <= "00000000";
+    fila_de_execucao(10) <= "00000000";
+    fila_de_execucao(11) <= "00000000";
+    fila_de_execucao(12) <= "00000000";
+    fila_de_execucao(13) <= "00000000";
+    fila_de_execucao(14) <= "00000000";
+    fila_de_execucao(15) <= "00000000";
+    fila_de_execucao(16) <= "00000000";
+    fila_de_execucao(17) <= "00000000";
+    fila_de_execucao(18) <= "00000000";
+
+    --Inicialização da fila de execução
+    PROCESS(clock, loop_func)
+    BEGIN
+        if (clock == '1') then
+            --indice <= indice + 1;
+            teste <= fila_de_execucao(indice)(1 downto 0) 
+        end if;
+            
+        end if ;
+    END PROCESS;
+END Main;

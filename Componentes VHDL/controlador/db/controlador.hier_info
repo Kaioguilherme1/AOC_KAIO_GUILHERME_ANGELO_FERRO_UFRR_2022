@@ -1,26 +1,35 @@
 |controlador
-op_code[0] => Mux3.IN5
 op_code[0] => Mux4.IN5
 op_code[0] => Mux5.IN5
 op_code[0] => Mux6.IN5
 op_code[0] => Mux7.IN5
-op_code[1] => Mux3.IN4
+op_code[0] => Mux8.IN5
+op_code[0] => Mux9.IN5
+op_code[0] => Mux10.IN5
 op_code[1] => Mux4.IN4
 op_code[1] => Mux5.IN4
 op_code[1] => Mux6.IN4
 op_code[1] => Mux7.IN4
+op_code[1] => Mux8.IN4
+op_code[1] => Mux9.IN4
+op_code[1] => Mux10.IN4
 op_code[1] => alu_src.DATAIN
 func[0] => Mux0.IN5
 func[0] => Mux1.IN5
 func[0] => Mux2.IN5
+func[0] => Mux3.IN5
 func[1] => Mux0.IN4
 func[1] => Mux1.IN4
 func[1] => Mux2.IN4
-reg_data[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-reg_data[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-reg_write <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+func[1] => Mux3.IN4
+reg_data[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+reg_data[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+loop_func[0] <= <GND>
+loop_func[1] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+reg_write <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
 alu_src <= op_code[1].DB_MAX_OUTPUT_PORT_TYPE
-alu_op <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-men_write <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+alu_op[0] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+alu_op[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+men_write <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
 
 
