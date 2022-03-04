@@ -48,13 +48,14 @@ BEGIN
     BEGIN
 
         IF (clk = '1' and indice < 16) THEN
-				IF(loop_func = "01") THEN
-						-- pulo do beq
-						indice <= indice + 1 - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(1 downto 0))); 
-				ELSIF	(loop_func = "10") THEN  
-						-- loop volta tantas instruções para traz
-						indice <= indice + 1 - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(5 downto 2)));    
-				END IF;
+			IF(loop_func = "01") THEN
+					-- pulo do beq
+					indice <= indice + 1 - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(1 downto 0))); 
+			IF	(loop_func = "10") THEN  
+					-- loop volta tantas instruções para traz
+					indice <= indice + 1 - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(5 downto 2)));  
+            END if;  
+			END IF;
             op_code <= fila_de_execucao(indice)(7 downto 6);
             reg1 <= fila_de_execucao(indice)(5 downto 4);
             reg2 <= fila_de_execucao(indice)(3 downto 2);

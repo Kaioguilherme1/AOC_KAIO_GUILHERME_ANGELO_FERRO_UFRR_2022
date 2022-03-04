@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/kaio/Documentos/Componentes/banco_de_instrucoes/simulation/modelsim
 Einstrucoes
-Z1 w1646344614
+Z1 w1646422837
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -24,9 +24,9 @@ V_Fa>8WH@003eX5@NkI7F[0
 !s100 0B8Z^H<Dc=dSCI_zm4UD52
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1646344632
+Z8 !s110 1646423077
 !i10b 1
-Z9 !s108 1646344632.000000
+Z9 !s108 1646423077.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd|
 !s107 /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd|
 !i113 1
@@ -39,9 +39,9 @@ R4
 DEx4 work 10 instrucoes 0 22 _Fa>8WH@003eX5@NkI7F[0
 !i122 0
 l25
-L20 48
-VoZ5jTN8B^?ak`gmoiZSAa2
-!s100 6A:o[N<I9M2kDITN?]]k;1
+L20 49
+V5R<_AeEWTSL5_ch_RjKfP2
+!s100 @Cn[A?cZlhzGPDFzGmQze1
 R7
 31
 R8

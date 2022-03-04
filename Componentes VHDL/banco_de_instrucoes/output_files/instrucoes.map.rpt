@@ -1,5 +1,5 @@
 Analysis & Elaboration report for instrucoes
-Thu Mar  3 17:57:05 2022
+Fri Mar  4 15:44:28 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Mar  3 17:57:05 2022       ;
+; Analysis & Elaboration Status ; Successful - Fri Mar  4 15:44:28 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; instrucoes                                  ;
 ; Top-level Entity Name         ; instrucoes                                  ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar  3 17:56:55 2022
+    Info: Processing started: Fri Mar  4 15:44:17 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off instrucoes -c instrucoes --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -174,8 +174,6 @@ Warning (10492): VHDL Process Statement warning at instrucoes.vhd(53): signal "i
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(53): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 53
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(56): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 56
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(56): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 56
-Warning (10492): VHDL Process Statement warning at instrucoes.vhd(58): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 58
-Warning (10492): VHDL Process Statement warning at instrucoes.vhd(58): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 58
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(59): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 59
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(59): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 59
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(60): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 60
@@ -184,7 +182,9 @@ Warning (10492): VHDL Process Statement warning at instrucoes.vhd(61): signal "f
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(61): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 61
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(62): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 62
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(62): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at instrucoes.vhd(63): signal "fila_de_execucao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 63
 Warning (10492): VHDL Process Statement warning at instrucoes.vhd(63): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at instrucoes.vhd(64): signal "indice" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 64
 Warning (10631): VHDL Process Statement warning at instrucoes.vhd(47): inferring latch(es) for signal or variable "indice", which holds its previous value in one or more paths through the process File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 47
 Warning (10631): VHDL Process Statement warning at instrucoes.vhd(47): inferring latch(es) for signal or variable "op_code", which holds its previous value in one or more paths through the process File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 47
 Warning (10631): VHDL Process Statement warning at instrucoes.vhd(47): inferring latch(es) for signal or variable "reg1", which holds its previous value in one or more paths through the process File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 47
@@ -207,8 +207,8 @@ Info (10041): Inferred latch for "indice[2]" at instrucoes.vhd(47) File: /home/k
 Info (10041): Inferred latch for "indice[3]" at instrucoes.vhd(47) File: /home/kaio/Documentos/Componentes/banco_de_instrucoes/instrucoes.vhd Line: 47
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 23 warnings
     Info: Peak virtual memory: 791 megabytes
-    Info: Processing ended: Thu Mar  3 17:57:05 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Processing ended: Fri Mar  4 15:44:28 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:30
 
 

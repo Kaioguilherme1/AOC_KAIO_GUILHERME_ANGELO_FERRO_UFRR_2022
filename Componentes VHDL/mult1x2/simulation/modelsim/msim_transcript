@@ -1,0 +1,43 @@
+# do mult1x2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/mult1x2/mult1x2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:05:46 on Mar 04,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/mult1x2/mult1x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult1x2
+# -- Compiling architecture Main of mult1x2
+# End time: 16:05:46 on Mar 04,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.mult1x2
+# vsim work.mult1x2 
+# Start time: 16:05:48 on Mar 04,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mult1x2(main)
+add wave -position insertpoint  \
+sim:/mult1x2/controle
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/mult1x2/controle
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 11111111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/mult1x2/A
+wave create -driver freeze -pattern constant -value 11001100 -range 7 0 -starttime 0ps -endtime 1000ps sim:/mult1x2/B
+add wave -position insertpoint  \
+sim:/mult1x2/saida
+wave create -driver freeze -pattern clock -initialvalue U -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/mult1x2/controle
+run
+run
+# End time: 16:07:45 on Mar 04,2022, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 0

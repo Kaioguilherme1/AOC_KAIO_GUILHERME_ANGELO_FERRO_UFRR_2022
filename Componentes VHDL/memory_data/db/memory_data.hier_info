@@ -1,0 +1,36 @@
+|memory_data
+mem_addr_data[0] => ram.RADDR
+mem_addr_data[0] => ram.WADDR
+mem_addr_data[1] => ram.RADDR1
+mem_addr_data[1] => ram.WADDR1
+mem_addr_data[2] => ram.RADDR2
+mem_addr_data[2] => ram.WADDR2
+mem_addr_data[3] => ram.RADDR3
+mem_addr_data[3] => ram.WADDR3
+mem_addr_data[4] => ram.RADDR4
+mem_addr_data[4] => ram.WADDR4
+mem_addr_data[5] => ram.RADDR5
+mem_addr_data[5] => ram.WADDR5
+mem_addr_data[6] => ram.RADDR6
+mem_addr_data[6] => ram.WADDR6
+mem_addr_data[7] => ram.RADDR7
+mem_addr_data[7] => ram.WADDR7
+mem_read_data[0] <= ram.DATAOUT
+mem_read_data[1] <= ram.DATAOUT1
+mem_read_data[2] <= ram.DATAOUT2
+mem_read_data[3] <= ram.DATAOUT3
+mem_read_data[4] <= ram.DATAOUT4
+mem_read_data[5] <= ram.DATAOUT5
+mem_read_data[6] <= ram.DATAOUT6
+mem_read_data[7] <= ram.DATAOUT7
+mem_write_data[0] => ram.DATAIN
+mem_write_data[1] => ram.DATAIN1
+mem_write_data[2] => ram.DATAIN2
+mem_write_data[3] => ram.DATAIN3
+mem_write_data[4] => ram.DATAIN4
+mem_write_data[5] => ram.DATAIN5
+mem_write_data[6] => ram.DATAIN6
+mem_write_data[7] => ram.DATAIN7
+mem_write_enable => ram.WE
+
+

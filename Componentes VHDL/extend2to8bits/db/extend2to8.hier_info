@@ -1,0 +1,13 @@
+|extend2to8
+entry[0] => output[0].DATAIN
+entry[1] => output[1].DATAIN
+output[0] <= entry[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= entry[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= <GND>
+output[3] <= <GND>
+output[4] <= <GND>
+output[5] <= <GND>
+output[6] <= <GND>
+output[7] <= <GND>
+
+

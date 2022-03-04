@@ -1,0 +1,35 @@
+|mult1x2
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+controle => saida.OUTPUTSELECT
+A[0] => saida.DATAB
+A[1] => saida.DATAB
+A[2] => saida.DATAB
+A[3] => saida.DATAB
+A[4] => saida.DATAB
+A[5] => saida.DATAB
+A[6] => saida.DATAB
+A[7] => saida.DATAB
+B[0] => saida.DATAA
+B[1] => saida.DATAA
+B[2] => saida.DATAA
+B[3] => saida.DATAA
+B[4] => saida.DATAA
+B[5] => saida.DATAA
+B[6] => saida.DATAA
+B[7] => saida.DATAA
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

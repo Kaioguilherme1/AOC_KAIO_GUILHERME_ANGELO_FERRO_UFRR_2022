@@ -25,7 +25,7 @@ SIGNAL fila_de_execucao: instrucao_type;
 BEGIN
 
     --inicialização do vetor de instruções
-    fila_de_execucao(0) <= "00000010";
+    fila_de_execucao(0) <= "00000011";
     fila_de_execucao(1) <= "00000000";
     fila_de_execucao(2) <= "00000001";
     fila_de_execucao(3) <= "11111111";
@@ -48,20 +48,20 @@ BEGIN
     BEGIN
 
         IF (clk = '1' and indice < 16) THEN
-				IF(loop_func = "01") THEN
-						-- pulo do beq
-						indice <= indice + 1 - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(1 downto 0))); 
-				ELSIF	(loop_func = "10") THEN  
-						-- loop volta tantas instruções para traz
-						indice <= indice + 1 - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(5 downto 2)));    
-				END IF;
+			indice <= indice + 1;	
+			IF(loop_func = "01") THEN
+					-- pulo do beq
+					indice <= indice + TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(1 downto 0))); 
+			IF	(loop_func = "10") THEN  
+					-- loop volta tantas instruções para traz
+					indice <= indice - TO_INTEGER(UNSIGNED(fila_de_execucao(indice)(5 downto 2)));  
+         END if;  
+			END IF;
             op_code <= fila_de_execucao(indice)(7 downto 6);
             reg1 <= fila_de_execucao(indice)(5 downto 4);
             reg2 <= fila_de_execucao(indice)(3 downto 2);
             func <= fila_de_execucao(indice)(1 downto 0);
             addr_i <= fila_de_execucao(indice)(1 downto 0);
-            indice <= indice + 1;
-				
         END IF;
     END PROCESS;
 END Main;
