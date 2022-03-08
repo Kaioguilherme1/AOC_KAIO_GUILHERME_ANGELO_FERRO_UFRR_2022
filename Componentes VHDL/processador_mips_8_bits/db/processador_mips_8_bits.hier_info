@@ -2,14 +2,14 @@
 clk => instrucoes:banco_de_instrucao.clk
 loop_f[0] => instrucoes:banco_de_instrucao.loop_func[0]
 loop_f[1] => instrucoes:banco_de_instrucao.loop_func[1]
-saida[0] <= mult1x4:multiplexador1x4.saida[0]
-saida[1] <= mult1x4:multiplexador1x4.saida[1]
-saida[2] <= mult1x4:multiplexador1x4.saida[2]
-saida[3] <= mult1x4:multiplexador1x4.saida[3]
-saida[4] <= mult1x4:multiplexador1x4.saida[4]
-saida[5] <= mult1x4:multiplexador1x4.saida[5]
-saida[6] <= mult1x4:multiplexador1x4.saida[6]
-saida[7] <= mult1x4:multiplexador1x4.saida[7]
+saida[0] << mult1x4:multiplexador1x4.saida[0]
+saida[1] << mult1x4:multiplexador1x4.saida[1]
+saida[2] << mult1x4:multiplexador1x4.saida[2]
+saida[3] << mult1x4:multiplexador1x4.saida[3]
+saida[4] << mult1x4:multiplexador1x4.saida[4]
+saida[5] << mult1x4:multiplexador1x4.saida[5]
+saida[6] << mult1x4:multiplexador1x4.saida[6]
+saida[7] << mult1x4:multiplexador1x4.saida[7]
 
 
 |processador_mips_8_bits|instrucoes:banco_de_instrucao
