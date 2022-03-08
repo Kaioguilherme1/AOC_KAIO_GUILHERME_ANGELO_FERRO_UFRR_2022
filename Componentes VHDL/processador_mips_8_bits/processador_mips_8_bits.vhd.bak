@@ -1,0 +1,16 @@
+--ULA com 4 funções
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_signed.all;
+
+--Entidade
+ENTITY processador_mips_8_bits IS
+    PORT(
+       
+    );
+END processador_mips_8_bits;
+
+ARCHITECTURE Main OF processador_mips_8_bits IS
+BEGIN
+   
+END Main;

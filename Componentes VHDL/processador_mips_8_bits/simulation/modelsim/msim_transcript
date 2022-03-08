@@ -1,0 +1,167 @@
+# do processador_mips_8_bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:00 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity banco_regs
+# -- Compiling architecture Main of banco_regs
+# End time: 17:45:00 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:00 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlador
+# -- Compiling architecture Main of controlador
+# End time: 17:45:00 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:00 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity instrucoes
+# -- Compiling architecture Main of instrucoes
+# End time: 17:45:01 on Mar 07,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:01 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_data
+# -- Compiling architecture Main of memory_data
+# End time: 17:45:01 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:01 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult1x2
+# -- Compiling architecture Main of mult1x2
+# End time: 17:45:01 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:01 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult1x4
+# -- Compiling architecture Main of mult1x4
+# End time: 17:45:01 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:01 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ULA
+# -- Compiling architecture Main of ULA
+# End time: 17:45:01 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:01 on Mar 07,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processador_mips_8_bits
+# -- Compiling architecture Main of processador_mips_8_bits
+# -- Loading entity instrucoes
+# -- Loading entity banco_regs
+# -- Loading entity mult1x2
+# -- Loading entity ULA
+# -- Loading entity memory_data
+# -- Loading entity mult1x4
+# -- Loading entity controlador
+# End time: 17:45:01 on Mar 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.processador_mips_8_bits
+# vsim work.processador_mips_8_bits 
+# Start time: 17:45:06 on Mar 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processador_mips_8_bits(main)
+# Loading work.instrucoes(main)
+# Loading work.banco_regs(main)
+# Loading work.mult1x2(main)
+# Loading work.ula(main)
+# Loading work.memory_data(main)
+# Loading work.mult1x4(main)
+# Loading work.controlador(main)
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/processador_mips_8_bits/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position insertpoint  \
+sim:/processador_mips_8_bits/valor_reg1
+add wave -position insertpoint  \
+sim:/processador_mips_8_bits/valor_reg2
+add wave -position insertpoint  \
+sim:/processador_mips_8_bits/saida_ULA
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processador_mips_8_bits/Memory_data
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processador_mips_8_bits/ula
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processador_mips_8_bits/ula
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processador_mips_8_bits/banco_de_registradores
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processador_mips_8_bits/banco_de_registradores
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /processador_mips_8_bits/ula
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /processador_mips_8_bits/ula
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /processador_mips_8_bits/Memory_data
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 5  Instance: /processador_mips_8_bits/ula
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 6  Instance: /processador_mips_8_bits/ula
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /processador_mips_8_bits/ula
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /processador_mips_8_bits/ula
+# End time: 17:46:09 on Mar 07,2022, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 12
