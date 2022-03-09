@@ -1,3 +1,4 @@
+# Reading pref.tcl
 # do ULA_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -6,13 +7,13 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying E:/iq/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/kaio/Documentos/Componentes/ULA/ULA.vhd}
+# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/ULA/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:59 on Mar 03,2022
-# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/ULA/ULA.vhd 
+# Start time: 17:04:35 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/ULA/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -20,26 +21,6 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ULA
 # -- Compiling architecture Main of ULA
-# End time: 16:13:59 on Mar 03,2022, Elapsed time: 0:00:00
+# End time: 17:04:35 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.ula
-# vsim work.ula 
-# Start time: 16:14:04 on Mar 03,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading work.ula(main)
-wave create -driver freeze -pattern constant -value 00001100 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/a
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern constant -value 00001100 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/b
-wave create -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
-add wave -position insertpoint  \
-sim:/ula/alu_result
-add wave -position insertpoint  \
-sim:/ula/zero
-run
-# End time: 16:19:54 on Mar 03,2022, Elapsed time: 0:05:50
-# Errors: 0, Warnings: 0
