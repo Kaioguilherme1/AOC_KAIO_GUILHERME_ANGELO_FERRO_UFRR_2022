@@ -1,5 +1,5 @@
 Analysis & Elaboration report for processador_mips_8_bits
-Tue Mar 08 16:02:11 2022
+Wed Mar 09 17:06:10 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Mar 08 16:02:11 2022       ;
+; Analysis & Elaboration Status ; Successful - Wed Mar 09 17:06:10 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; processador_mips_8_bits                     ;
 ; Top-level Entity Name         ; processador_mips_8_bits                     ;
@@ -201,7 +201,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 08 16:01:58 2022
+    Info: Processing started: Wed Mar 09 17:05:59 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips_8_bits -c processador_mips_8_bits --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -275,8 +275,8 @@ Info (12128): Elaborating entity "mult1x4" for hierarchy "mult1x4:multiplexador1
 Info (12128): Elaborating entity "controlador" for hierarchy "controlador:controle" File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd Line: 118
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Tue Mar 08 16:02:11 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Processing ended: Wed Mar 09 17:06:10 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
 
 
