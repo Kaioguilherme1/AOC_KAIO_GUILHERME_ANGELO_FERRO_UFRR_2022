@@ -7,9 +7,11 @@ USE IEEE.NUMERIC_STD.ALL;
 --Entidade
 ENTITY processador_mips_8_bits IS
     PORT(
-       clk: IN std_logic;
-		 loop_f: IN std_logic_vector(1 downto 0);
-		 saida: out std_logic_vector(7 downto 0)
+		 reset: IN std_logic;
+		 --clock: IN std_logic;
+		 indice: IN std_logic_vector(7 downto 0);
+		 alu_result: OUT std_logic_vector(7 downto 0)
+	
     );
 END processador_mips_8_bits;
 
@@ -25,6 +27,9 @@ SIGNAL mult1x4_valor: std_logic_vector(7 downto 0);
 SIGNAL saida_ULA: std_logic_vector(7 downto 0);
 SIGNAL saida_memory: std_logic_vector(7 downto 0);
 SIGNAL extensao_8bits: std_logic_vector(7 downto 0);
+SIGNAL indice_aux: std_logic_vector(7 downto 0);
+SIGNAL zero: std_logic_vector(1 downto 0);
+
 
 --variaveis do controlador
 SIGNAL reg_data:  std_logic_vector(1 downto 0);
@@ -35,12 +40,26 @@ SIGNAL alu_op:    std_logic_vector(1 downto 0);
 SIGNAL men_write: std_logic;
 
 BEGIN
+
+--bug
+--pc: ENTITY work.PC
+--		port map(
+--		--entradas
+--		clk => clock, 
+--		reset => reset,
+--		beq_f => zero,
+--		loop_f => loop_func,
+--		loop_valor => instrucao_atual(5 downto 2),
+--		beq => instrucao_atual(1 downto 0),
+--		--saidas
+--		indice => indice_aux
+--		);
+indice_aux <= indice;
 --==================Instrucoes====================
 banco_de_instrucao: ENTITY work.instrucoes
 		port map(
 		--entradas
-		clk => clk,
-		loop_func => loop_f,
+		pc => indice_aux,
 		--saidas
 		instrucao => instrucao_atual
 		);
@@ -49,6 +68,7 @@ banco_de_instrucao: ENTITY work.instrucoes
 banco_de_registradores: entity work.banco_regs
 	port map(
 		--entradas
+		reg_rest => reset,
 		reg_write_en => reg_write, 
       reg_write_data => valor_reg_write,  --dado a ser escrito no reg write
       reg_write_addr =>  instrucao_atual(5 downto 4),  --endereço do reg write
@@ -82,7 +102,7 @@ ula: ENTITY work.ula
       alu_op => alu_op,  --seletor de funcao
 		--saidas
 		alu_result => saida_ULA,
-		zero => loop_func
+		zero => zero
 		
 		
 	);
@@ -130,6 +150,5 @@ controle: entity work.controlador
 		
 	);
 	
-
-saida <= valor_reg_write;
+alu_result <= saida_ULA;
 END Main;

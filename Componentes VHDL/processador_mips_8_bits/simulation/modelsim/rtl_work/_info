@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/simulation/modelsim
+Z0 d/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/modelsim
 Ebanco_regs
-Z1 w1646767697
+Z1 w1646841331
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z5 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl
-Z6 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl
+Z5 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl
+Z6 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl
 l0
 L8 1
-V`hT@_Jz5Eka`U[;b3mSg12
-!s100 DESKifT`gLOQPz6iiKa4B2
+VBCNeA0JD2F=>LRf=:XCNS1
+!s100 @o^=J0Wz=_QX@CQ=:[KQR1
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1646773275
+Z8 !s110 1646866210
 !i10b 1
-Z9 !s108 1646773275.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl|
-Z11 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl|
+Z9 !s108 1646866210.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl|
+Z11 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -36,12 +36,12 @@ Amain
 R2
 R3
 R4
-Z14 DEx4 work 10 banco_regs 0 22 `hT@_Jz5Eka`U[;b3mSg12
+Z14 DEx4 work 10 banco_regs 0 22 BCNeA0JD2F=>LRf=:XCNS1
 !i122 0
-l23
-L20 21
-VC9mWFcUD8`5IH6`I;9Q382
-!s100 >eVN0U<CX4h>Q=_JY]RUJ0
+l24
+L21 26
+VR;JTF4`iOd4UzDZ3Tm=<>0
+!s100 @bXAckY>TBFV2lHn0zf5O3
 R7
 31
 R8
@@ -53,24 +53,24 @@ R11
 R12
 R13
 Econtrolador
-R1
+Z15 w1646682560
 R3
 R4
 !i122 1
 R0
-Z15 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd
-Z16 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd
+Z16 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd
+Z17 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd
 l0
 L5 1
 V6QL3:VNRO;9oU<72C=C9a3
 !s100 YLB3IGje4>U[iWXY4768I0
 R7
 31
-Z17 !s110 1646773276
+R8
 !i10b 1
 R9
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd|
-Z19 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd|
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd|
+Z19 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd|
 !i113 1
 R12
 R13
@@ -85,7 +85,7 @@ VFc_=cK5WN5El>NQhWbdFK3
 !s100 UOMDOCZYi_b6nH_zg:0e]1
 R7
 31
-R17
+R8
 !i10b 1
 R9
 R18
@@ -94,25 +94,25 @@ R19
 R12
 R13
 Einstrucoes
-R1
+Z21 w1646855433
 R2
 R3
 R4
 !i122 2
 R0
-Z21 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd
-Z22 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd
+Z22 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd
+Z23 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd
 l0
 L7 1
-VeiZ@Ah`m1KR;KP48dcI_f1
-!s100 Tb;Y91iXP7DRCLoEci@SZ2
+VDm=gj7ffQE<?f<7CC9oZG0
+!s100 7Ndi4=B4GHg:W?iA^i[am0
 R7
 31
-R17
+R8
 !i10b 1
-Z23 !s108 1646773276.000000
-Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd|
-Z25 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd|
+R9
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd|
+Z25 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd|
 !i113 1
 R12
 R13
@@ -120,42 +120,42 @@ Amain
 R2
 R3
 R4
-Z26 DEx4 work 10 instrucoes 0 22 eiZ@Ah`m1KR;KP48dcI_f1
+Z26 DEx4 work 10 instrucoes 0 22 Dm=gj7ffQE<?f<7CC9oZG0
 !i122 2
-l20
-L15 45
-VV:m^bW:2z]`^9UEzFlgGA2
-!s100 o<VM2@i:OmYP==RV[;V5N0
+l19
+L14 31
+V6n<g_6ljjW<=aTz29e4Qh3
+!s100 I_Cc5P6em;fCQXmb:l4VZ1
 R7
 31
-R17
+R8
 !i10b 1
-R23
+R9
 R24
 R25
 !i113 1
 R12
 R13
 Ememory_data
-R1
+Z27 w1646682650
 R2
 R3
 R4
 !i122 3
 R0
-Z27 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd
-Z28 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd
+Z28 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd
+Z29 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd
 l0
 L6 1
 VCW0ZB^H3KLKV]`z?imiA]1
 !s100 j@1b`lb`hzfSW^7d6mz_T2
 R7
 31
-R17
+R8
 !i10b 1
-R23
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd|
-Z30 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd|
+R9
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd|
+Z31 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd|
 !i113 1
 R12
 R13
@@ -163,7 +163,7 @@ Amain
 R2
 R3
 R4
-Z31 DEx4 work 11 memory_data 0 22 CW0ZB^H3KLKV]`z?imiA]1
+Z32 DEx4 work 11 memory_data 0 22 CW0ZB^H3KLKV]`z?imiA]1
 !i122 3
 l18
 L15 12
@@ -171,40 +171,40 @@ VHG0bObz22mR:Z:[jTFJeW0
 !s100 g<16iE@jNG@hSVDB@M^T61
 R7
 31
-R17
+R8
 !i10b 1
-R23
-R29
+R9
 R30
+R31
 !i113 1
 R12
 R13
 Emult1x2
-R1
+Z33 w1646682674
 R3
 R4
 !i122 4
 R0
-Z32 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd
-Z33 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd
+Z34 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd
+Z35 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd
 l0
 L7 1
 VWENS]3RjcAciWP<d0^dSS3
 !s100 6@gG@DK^B<JHKXQ5=zE<V1
 R7
 31
-R17
+Z36 !s110 1646866211
 !i10b 1
-R23
-Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd|
-Z35 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd|
+R9
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd|
+Z38 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd|
 !i113 1
 R12
 R13
 Amain
 R3
 R4
-Z36 DEx4 work 7 mult1x2 0 22 WENS]3RjcAciWP<d0^dSS3
+Z39 DEx4 work 7 mult1x2 0 22 WENS]3RjcAciWP<d0^dSS3
 !i122 4
 l19
 L18 14
@@ -212,40 +212,40 @@ VWHWi>`c1UPhgI82ea_0:?3
 !s100 C8dWoB>HB]?jd;Mcm>bTa1
 R7
 31
-R17
+R36
 !i10b 1
-R23
-R34
-R35
+R9
+R37
+R38
 !i113 1
 R12
 R13
 Emult1x4
-R1
+Z40 w1646682698
 R3
 R4
 !i122 5
 R0
-Z37 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd
-Z38 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd
+Z41 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd
+Z42 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd
 l0
 L7 1
 ViBZhY:8UjMSCDKmohbTdW1
 !s100 YS:XHD4Da<U5U:92?C0]50
 R7
 31
-Z39 !s110 1646773277
+R36
 !i10b 1
-R23
-Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd|
-Z41 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd|
+Z43 !s108 1646866211.000000
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd|
+Z45 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd|
 !i113 1
 R12
 R13
 Amain
 R3
 R4
-Z42 DEx4 work 7 mult1x4 0 22 iBZhY:8UjMSCDKmohbTdW1
+Z46 DEx4 work 7 mult1x4 0 22 iBZhY:8UjMSCDKmohbTdW1
 !i122 5
 l21
 L20 16
@@ -253,98 +253,98 @@ VEL6Li3zYFn=hVS?n^lZj=0
 !s100 `:O<RO7H67g=_kSe05dJ[1
 R7
 31
-R39
+R36
 !i10b 1
-R23
-R40
-R41
+R43
+R44
+R45
 !i113 1
 R12
 R13
 Eprocessador_mips_8_bits
-R1
+Z47 w1646866187
 R2
-Z43 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z44 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z48 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z49 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R3
 R4
 !i122 7
 R0
-Z45 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd
-Z46 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd
+Z50 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd
+Z51 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd
 l0
 L8 1
-VYP_1b[U7DLaNm<GcKV8[W3
-!s100 8BJDG4O[ZJXQ82V;fbf_O3
+V<[ho<WoWYSO`o?Ze?1iDL3
+!s100 DcD2jC34@Ac3zKPdQ<<Fd1
 R7
 31
-R39
+R36
 !i10b 1
-Z47 !s108 1646773277.000000
-Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd|
-!s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd|
+R43
+Z52 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd|
+!s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd|
 !i113 1
 R12
 R13
 Amain
 R20
-R42
-R31
-Z49 DEx4 work 3 ula 0 22 `D`YSD_Wke<Q?X`TfVWVH3
-R36
+R46
+R32
+Z53 DEx4 work 3 ula 0 22 `D`YSD_Wke<Q?X`TfVWVH3
+R39
 R14
 R26
 R2
-R43
-R44
+R48
+R49
 R3
 R4
-DEx4 work 23 processador_mips_8_bits 0 22 YP_1b[U7DLaNm<GcKV8[W3
+DEx4 work 23 processador_mips_8_bits 0 22 <[ho<WoWYSO`o?Ze?1iDL3
 !i122 7
-l37
-L17 119
-V4H_U0]E0eLmKNED^Y`H>=2
-!s100 lHQ[WhA:R<8;?1f?XT6?[1
+l42
+L19 136
+V:hFb4Hf^M8Ac=1Almb?Ro0
+!s100 MQEZUN;Qo84^C;2`KOi@e3
 R7
 31
-R39
+R36
 !i10b 1
-R47
-R48
-Z50 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd|
+R43
+R52
+Z54 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd|
 !i113 1
 R12
 R13
 Eula
-R1
-R43
-R44
+Z55 w1646682717
+R48
+R49
 R3
 R4
 !i122 6
 R0
-Z51 8C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd
-Z52 FC:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd
+Z56 8/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd
+Z57 F/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd
 l0
 L7 1
 V`D`YSD_Wke<Q?X`TfVWVH3
 !s100 ;n`BfdFTdY`M6Cdi:lUUi1
 R7
 31
-R39
+R36
 !i10b 1
-R47
-Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd|
-Z54 !s107 C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd|
+R43
+Z58 !s90 -reportprogress|300|-93|-work|work|/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd|
+Z59 !s107 /home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd|
 !i113 1
 R12
 R13
 Amain
-R43
-R44
+R48
+R49
 R3
 R4
-R49
+R53
 !i122 6
 l17
 L16 21
@@ -352,11 +352,11 @@ VR76NB^^Pnd=;>@=:EXU8T2
 !s100 <8>?Jazhd][Ji<`jiUl9e2
 R7
 31
-R39
+R36
 !i10b 1
-R47
-R53
-R54
+R43
+R58
+R59
 !i113 1
 R12
 R13

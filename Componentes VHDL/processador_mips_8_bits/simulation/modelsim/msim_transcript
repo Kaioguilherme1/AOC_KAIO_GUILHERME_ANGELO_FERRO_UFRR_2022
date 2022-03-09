@@ -1,4 +1,3 @@
-# Reading pref.tcl
 # do processador_mips_8_bits_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,82 +6,82 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying E:/iq/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:15 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl 
+# Start time: 18:50:10 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity banco_regs
 # -- Compiling architecture Main of banco_regs
-# End time: 17:01:15 on Mar 08,2022, Elapsed time: 0:00:00
+# End time: 18:50:10 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:15 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd 
+# Start time: 18:50:10 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlador
 # -- Compiling architecture Main of controlador
-# End time: 17:01:16 on Mar 08,2022, Elapsed time: 0:00:01
+# End time: 18:50:10 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:16 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd 
+# Start time: 18:50:10 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity instrucoes
 # -- Compiling architecture Main of instrucoes
-# End time: 17:01:16 on Mar 08,2022, Elapsed time: 0:00:00
+# End time: 18:50:10 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:16 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd 
+# Start time: 18:50:10 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory_data
 # -- Compiling architecture Main of memory_data
-# End time: 17:01:16 on Mar 08,2022, Elapsed time: 0:00:00
+# End time: 18:50:10 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:16 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd 
+# Start time: 18:50:10 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mult1x2
 # -- Compiling architecture Main of mult1x2
-# End time: 17:01:16 on Mar 08,2022, Elapsed time: 0:00:00
+# End time: 18:50:11 on Mar 09,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:16 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd 
+# Start time: 18:50:11 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mult1x4
 # -- Compiling architecture Main of mult1x4
-# End time: 17:01:17 on Mar 08,2022, Elapsed time: 0:00:01
+# End time: 18:50:11 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:17 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd 
+# Start time: 18:50:11 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -90,12 +89,12 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ULA
 # -- Compiling architecture Main of ULA
-# End time: 17:01:17 on Mar 08,2022, Elapsed time: 0:00:00
+# End time: 18:50:11 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:01:17 on Mar 08,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd 
+# Start time: 18:50:11 on Mar 09,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -111,273 +110,6 @@
 # -- Loading entity memory_data
 # -- Loading entity mult1x4
 # -- Loading entity controlador
-# End time: 17:01:17 on Mar 08,2022, Elapsed time: 0:00:00
+# End time: 18:50:11 on Mar 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.processador_mips_8_bits
-# vsim work.processador_mips_8_bits 
-# Start time: 17:01:25 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.processador_mips_8_bits(main)
-# Loading work.instrucoes(main)
-# Loading work.banco_regs(main)
-# Loading work.mult1x2(main)
-# Loading work.ula(main)
-# Loading work.memory_data(main)
-# Loading work.mult1x4(main)
-# Loading work.controlador(main)
-vsim work.controlador
-# End time: 17:01:50 on Mar 08,2022, Elapsed time: 0:00:25
-# Errors: 0, Warnings: 0
-# vsim work.controlador 
-# Start time: 17:01:50 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.controlador(main)
-wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ns -endtime 1ns sim:/controlador/func
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# processador_mips_8_bits
-add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/controlador/func
-wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/controlador/op_code
-# processador_mips_8_bits
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/controlador/op_code
-add wave -position end  sim:/controlador/reg_data
-add wave -position end  sim:/controlador/reg_write
-add wave -position end  sim:/controlador/alu_src
-add wave -position end  sim:/controlador/alu_op
-add wave -position end  sim:/controlador/men_write
-add wave -position end  sim:/controlador/loop_func
-run -continue
-run
-# Cannot Cut/Copy/Delete the Individual bit of a editable vector
-# Cannot Cut/Copy/Delete the Individual bit of a editable vector
-wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 1ns Edit:/controlador/func
-# processador_mips_8_bits
-run
-restart
-run
-restart
-wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/op_code
-# processador_mips_8_bits
-wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 0ns -endtime 1ns Edit:/controlador/func
-# processador_mips_8_bits
-run
-restart
-wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/op_code
-# processador_mips_8_bits
-run
-run
-restart
-run
-run -continue
-run -continue
-run -continue
-run -continue
-run -all
-restart
-wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/op_code
-# processador_mips_8_bits
-run
-run
-restart
-run
-restart
-run -all
-run
-restart
-run
-restart
-wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/op_code
-# processador_mips_8_bits
-run
-wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/op_code
-# processador_mips_8_bits
-restart
-run
-add wave -position 1  sim:/controlador/func
-wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/controlador/func
-# processador_mips_8_bits
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/controlador/func
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/controlador/op_code
-wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/op_code
-# processador_mips_8_bits
-wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/controlador/func
-# processador_mips_8_bits
-restart
-run
-vsim work.banco_regs
-# End time: 17:35:27 on Mar 08,2022, Elapsed time: 0:33:37
-# Errors: 0, Warnings: 0
-# vsim work.banco_regs 
-# Start time: 17:35:27 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.banco_regs(main)
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_en
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# controlador
-add wave -position 1 -format Logic -height 17 -editable 2 Edit:/banco_regs/reg_write_en
-wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_addr
-# controlador
-add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/banco_regs/reg_write_addr
-wave create -driver freeze -pattern constant -value 00000011 -range 7 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_write_data
-# controlador
-add wave -position 3 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/banco_regs/reg_write_data
-add wave -position end  sim:/banco_regs/reg_read_addr_1
-add wave -position end  sim:/banco_regs/reg_read_addr_2
-add wave -position end  sim:/banco_regs/reg_read_data_1
-add wave -position end  sim:/banco_regs/reg_read_data_2
-add wave -position end  sim:/banco_regs/reg_array
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /banco_regs
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /banco_regs
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /banco_regs
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /banco_regs
-wave modify -driver freeze -pattern constant -value 00000111 -range 7 0 -starttime 0ps -endtime 1000ps Edit:/banco_regs/reg_write_data
-# controlador
-wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/banco_regs/reg_write_addr
-# controlador
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /banco_regs
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /banco_regs
-wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_read_addr_1
-# controlador
-add wave -position 4 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/banco_regs/reg_read_addr_1
-wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/banco_regs/reg_read_addr_2
-# controlador
-add wave -position 5 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/banco_regs/reg_read_addr_2
-run
-vsim work.memory_data
-# End time: 17:53:35 on Mar 08,2022, Elapsed time: 0:18:08
-# Errors: 0, Warnings: 6
-# vsim work.memory_data 
-# Start time: 17:53:35 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_data(main)
-add wave -position end  sim:/memory_data/mem_read_data
-add wave -position end  sim:/memory_data/ram
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/memory_data/mem_write_enable
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# banco_regs
-add wave -position 1 -format Logic -height 17 -editable 2 Edit:/memory_data/mem_write_enable
-wave create -driver freeze -pattern constant -value 00001111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/memory_data/mem_write_data
-# banco_regs
-add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/memory_data/mem_write_data
-wave create -driver freeze -pattern constant -value 00000111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/memory_data/mem_addr_data
-# banco_regs
-add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/memory_data/mem_addr_data
-run
-wave modify -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps Edit:/memory_data/mem_write_enable
-# banco_regs
-wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps Edit:/memory_data/mem_write_enable
-# banco_regs
-vsim work.mult1x2
-# End time: 18:07:21 on Mar 08,2022, Elapsed time: 0:13:46
-# Errors: 0, Warnings: 0
-# vsim work.mult1x2 
-# Start time: 18:07:22 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mult1x2(main)
-vsim work.mult1x4
-# End time: 18:08:10 on Mar 08,2022, Elapsed time: 0:00:48
-# Errors: 0, Warnings: 0
-# vsim work.mult1x4 
-# Start time: 18:08:10 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mult1x4(main)
-add wave -position end  sim:/mult1x4/saida
-wave create -driver freeze -pattern constant -value 00000001 -range 7 0 -starttime 0ps -endtime 1000ps sim:/mult1x4/A
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# mult1x2
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/mult1x4/A
-wave create -driver freeze -pattern constant -value 00000011 -range 7 0 -starttime 0ps -endtime 1000ps sim:/mult1x4/B
-# mult1x2
-add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/mult1x4/B
-wave create -driver freeze -pattern constant -value 00000111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/mult1x4/C
-# mult1x2
-add wave -position 3 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/mult1x4/C
-wave create -driver freeze -pattern constant -value 00001111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/mult1x4/D
-# mult1x2
-add wave -position 4 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/mult1x4/D
-wave create -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps sim:/mult1x4/controle
-# mult1x2
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/mult1x4/controle
-wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/mult1x4/controle
-# mult1x2
-run
-wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/mult1x4/controle
-# mult1x2
-run
-wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/mult1x4/controle
-# mult1x2
-run
-wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/mult1x4/controle
-# mult1x2
-run
-vsim work.ula
-# End time: 18:14:50 on Mar 08,2022, Elapsed time: 0:06:40
-# Errors: 0, Warnings: 0
-# vsim work.ula 
-# Start time: 18:14:50 on Mar 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading work.ula(main)
-add wave -position end  sim:/ula/alu_result
-add wave -position end  sim:/ula/zero
-wave create -driver freeze -pattern constant -value 00001111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/a
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# mult1x4
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/ula/a
-wave create -driver freeze -pattern constant -value 00000111 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ula/b
-# mult1x4
-add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/ula/b
-wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps sim:/ula/alu_op
-# mult1x4
-add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/ula/alu_op
-run
-wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/ula/alu_op
-# mult1x4
-run
-wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/ula/alu_op
-# mult1x4
-run
-wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/ula/alu_op
-# mult1x4
-run
-restart
-restart
-wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/ula/alu_op
-# mult1x4
-run
-wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/ula/alu_op
-# mult1x4
-run
-wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/ula/alu_op
-# mult1x4
-run
-# End time: 18:23:27 on Mar 08,2022, Elapsed time: 0:08:37
-# Errors: 0, Warnings: 0

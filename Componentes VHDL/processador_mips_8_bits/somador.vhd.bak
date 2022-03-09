@@ -1,0 +1,17 @@
+--ULA com 4 funções
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_signed.all;
+
+--Entidade
+ENTITY ULA IS
+    PORT(
+        a,b : in std_logic_vector(7 downto 0); 
+        resultado : out in std_logic_vector(7 downto 0)
+    );
+END ULA;
+
+ARCHITECTURE Main OF ULA IS
+BEGIN
+    resultado <= a + b;
+END Main;

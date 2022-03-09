@@ -1,0 +1,28 @@
+--ULA com 4 funções
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_signed.all;
+
+--Entidade
+ENTITY PC IS
+    PORT(
+        clk, rest : std_logic;
+		  rest: out std_logic;
+		  indice: out std_logic_vector(7 downto 0)
+    );
+END PC;
+
+ARCHITECTURE main OF PC IS
+BEGIN
+    PROCESS(clock,reset)
+	 BEGIN 
+		IF(reset='1') then
+			indice <= "00000000";
+		END IF;
+		
+		IF (Clock'EVENT AND Clock = '1') THEN
+			indice <= indice + "00000001" ;
+			
+		END IF;
+	END PROCESS;
+END Main;

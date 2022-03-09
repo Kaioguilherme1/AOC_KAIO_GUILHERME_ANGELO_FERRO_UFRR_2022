@@ -1,0 +1,31 @@
+|PC
+clk => indice_aux[0].OUTPUTSELECT
+clk => indice_aux[1].OUTPUTSELECT
+clk => indice_aux[2].OUTPUTSELECT
+clk => indice_aux[3].OUTPUTSELECT
+clk => indice_aux[4].OUTPUTSELECT
+clk => indice_aux[5].OUTPUTSELECT
+clk => indice_aux[6].OUTPUTSELECT
+clk => indice_aux[7].OUTPUTSELECT
+clk => indice_aux[7].IN0
+reset => indice_aux[7].IN1
+loop_f[0] => Equal1.IN3
+loop_f[1] => Equal1.IN2
+beq_f[0] => Equal0.IN3
+beq_f[1] => Equal0.IN2
+loop_valor[0] => Add3.IN16
+loop_valor[1] => Add3.IN15
+loop_valor[2] => Add3.IN14
+loop_valor[3] => Add3.IN13
+beq[0] => Add1.IN16
+beq[1] => Add1.IN15
+indice[0] <= indice_aux[0].DB_MAX_OUTPUT_PORT_TYPE
+indice[1] <= indice_aux[1].DB_MAX_OUTPUT_PORT_TYPE
+indice[2] <= indice_aux[2].DB_MAX_OUTPUT_PORT_TYPE
+indice[3] <= indice_aux[3].DB_MAX_OUTPUT_PORT_TYPE
+indice[4] <= indice_aux[4].DB_MAX_OUTPUT_PORT_TYPE
+indice[5] <= indice_aux[5].DB_MAX_OUTPUT_PORT_TYPE
+indice[6] <= indice_aux[6].DB_MAX_OUTPUT_PORT_TYPE
+indice[7] <= indice_aux[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
