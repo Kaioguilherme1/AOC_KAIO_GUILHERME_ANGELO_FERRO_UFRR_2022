@@ -8,7 +8,7 @@ USE IEEE.NUMERIC_STD.ALL;
 ENTITY processador_mips_8_bits IS
     PORT(
 		 reset: IN std_logic;
-		 --clock: IN std_logic;
+		 clock: IN std_logic;
 		 indice: IN std_logic_vector(7 downto 0);
 		 alu_result: OUT std_logic_vector(7 downto 0)
 	
@@ -42,19 +42,19 @@ SIGNAL men_write: std_logic;
 BEGIN
 
 --bug
---pc: ENTITY work.PC
---		port map(
---		--entradas
---		clk => clock, 
---		reset => reset,
---		beq_f => zero,
---		loop_f => loop_func,
---		loop_valor => instrucao_atual(5 downto 2),
---		beq => instrucao_atual(1 downto 0),
---		--saidas
---		indice => indice_aux
---		);
-indice_aux <= indice;
+pc: ENTITY work.PC
+		port map(
+		--entradas
+		clk => clock, 
+		reset => reset,
+		beq_f => zero,
+		loop_f => "00",
+		loop_valor => instrucao_atual(5 downto 2),
+		beq => instrucao_atual(1 downto 0),
+		--saidas
+		indice => indice_aux
+   	);
+--indice_aux <= indice;
 --==================Instrucoes====================
 banco_de_instrucao: ENTITY work.instrucoes
 		port map(

@@ -1,13 +1,15 @@
 |processador_mips_8_bits
+reset => pc:pc.reset
 reset => banco_regs:banco_de_registradores.reg_rest
-indice[0] => instrucoes:banco_de_instrucao.pc[0]
-indice[1] => instrucoes:banco_de_instrucao.pc[1]
-indice[2] => instrucoes:banco_de_instrucao.pc[2]
-indice[3] => instrucoes:banco_de_instrucao.pc[3]
-indice[4] => instrucoes:banco_de_instrucao.pc[4]
-indice[5] => instrucoes:banco_de_instrucao.pc[5]
-indice[6] => instrucoes:banco_de_instrucao.pc[6]
-indice[7] => instrucoes:banco_de_instrucao.pc[7]
+clock => pc:pc.clk
+indice[0] => ~NO_FANOUT~
+indice[1] => ~NO_FANOUT~
+indice[2] => ~NO_FANOUT~
+indice[3] => ~NO_FANOUT~
+indice[4] => ~NO_FANOUT~
+indice[5] => ~NO_FANOUT~
+indice[6] => ~NO_FANOUT~
+indice[7] => ~NO_FANOUT~
 alu_result[0] <= ula:ula.alu_result[0]
 alu_result[1] <= ula:ula.alu_result[1]
 alu_result[2] <= ula:ula.alu_result[2]
@@ -16,6 +18,37 @@ alu_result[4] <= ula:ula.alu_result[4]
 alu_result[5] <= ula:ula.alu_result[5]
 alu_result[6] <= ula:ula.alu_result[6]
 alu_result[7] <= ula:ula.alu_result[7]
+
+
+|processador_mips_8_bits|PC:pc
+clk => indice_aux[0].OUTPUTSELECT
+clk => indice_aux[1].OUTPUTSELECT
+clk => indice_aux[2].OUTPUTSELECT
+clk => indice_aux[3].OUTPUTSELECT
+clk => indice_aux[4].OUTPUTSELECT
+clk => indice_aux[5].OUTPUTSELECT
+clk => indice_aux[6].OUTPUTSELECT
+clk => indice_aux[7].OUTPUTSELECT
+clk => indice_aux[7].IN0
+reset => indice_aux[7].IN1
+loop_f[0] => Equal1.IN3
+loop_f[1] => Equal1.IN2
+beq_f[0] => Equal0.IN3
+beq_f[1] => Equal0.IN2
+loop_valor[0] => Add3.IN16
+loop_valor[1] => Add3.IN15
+loop_valor[2] => Add3.IN14
+loop_valor[3] => Add3.IN13
+beq[0] => Add1.IN16
+beq[1] => Add1.IN15
+indice[0] <= indice_aux[0].DB_MAX_OUTPUT_PORT_TYPE
+indice[1] <= indice_aux[1].DB_MAX_OUTPUT_PORT_TYPE
+indice[2] <= indice_aux[2].DB_MAX_OUTPUT_PORT_TYPE
+indice[3] <= indice_aux[3].DB_MAX_OUTPUT_PORT_TYPE
+indice[4] <= indice_aux[4].DB_MAX_OUTPUT_PORT_TYPE
+indice[5] <= indice_aux[5].DB_MAX_OUTPUT_PORT_TYPE
+indice[6] <= indice_aux[6].DB_MAX_OUTPUT_PORT_TYPE
+indice[7] <= indice_aux[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador_mips_8_bits|instrucoes:banco_de_instrucao

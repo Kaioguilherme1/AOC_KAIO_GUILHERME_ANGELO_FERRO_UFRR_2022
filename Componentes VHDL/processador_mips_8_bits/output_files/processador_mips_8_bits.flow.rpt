@@ -1,5 +1,5 @@
 Flow report for processador_mips_8_bits
-Wed Mar 09 17:06:10 2022
+Wed Mar 09 21:43:28 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Wed Mar 09 17:06:10 2022       ;
+; Flow Status                 ; Successful - Wed Mar 09 21:43:28 2022       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; processador_mips_8_bits                     ;
 ; Top-level Entity Name       ; processador_mips_8_bits                     ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 03/09/2022 17:05:59     ;
+; Start date & time ; 03/09/2022 21:43:19     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; processador_mips_8_bits ;
 +-------------------+-------------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 57827280129696.164685995915004         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 57827280129696.164687659914540         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -96,8 +96,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4826 MB             ; 00:00:20                           ;
-; Total                  ; 00:00:11     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4835 MB             ; 00:00:20                           ;
+; Total                  ; 00:00:10     ; --                      ; --                  ; 00:00:20                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
