@@ -19,23 +19,15 @@ SIGNAL fila_de_execucao: instrucao_type;
 BEGIN
 
     --inicialização do vetor de instruções
-   fila_de_execucao(0) <= "00000000";
-	fila_de_execucao(1) <= "00000001";
-	fila_de_execucao(2) <= "00000010";
-	fila_de_execucao(3) <= "00000011";
-	fila_de_execucao(4) <= "00000100";
-	fila_de_execucao(5) <= "00000101";
-	fila_de_execucao(6) <= "00000110";
-	fila_de_execucao(7) <= "00000111";
-	fila_de_execucao(8) <= "00001000";
-	fila_de_execucao(9) <= "00001001";
-	fila_de_execucao(10) <= "00001010";
-	fila_de_execucao(11) <= "00001011";
-	fila_de_execucao(12) <= "00001110";
-	fila_de_execucao(13) <= "00001111";
-	fila_de_execucao(14) <= "00010000";
-	fila_de_execucao(15) <= "00010011";
-	fila_de_execucao(16) <= "00010100";
+    fila_de_execucao(0) <= "00000100"; -- add $s0, $s1
+	fila_de_execucao(1) <= "00000000"; -- add $s0, $s0
+	fila_de_execucao(2) <= "00001001"; -- sub  $s0, $s2
+	fila_de_execucao(3) <= "11000101"; -- sw $s0, 1($s1)
+	fila_de_execucao(4) <= "10010101"; --lw $s1, 1($s1)
+	fila_de_execucao(5) <= "11010110"; --sw $s1, 2($s1)
+	fila_de_execucao(6) <= "00110010"; --move $s3, $s0
+	fila_de_execucao(7) <= "10010110"; --lw $s1, 2($s1)
+	
 
     indice <= TO_INTEGER(UNSIGNED(pc));
 	 instrucao <= fila_de_execucao(indice);
