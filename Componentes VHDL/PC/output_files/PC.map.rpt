@@ -1,5 +1,5 @@
 Analysis & Elaboration report for PC
-Wed Mar 09 19:17:25 2022
+Wed Mar  9 18:55:23 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Mar 09 19:17:25 2022       ;
+; Analysis & Elaboration Status ; Successful - Wed Mar  9 18:55:23 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; PC                                          ;
 ; Top-level Entity Name         ; PC                                          ;
@@ -57,8 +57,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -161,32 +161,32 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 09 19:17:15 2022
+    Info: Processing started: Wed Mar  9 18:55:11 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PC -c PC --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-main File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 19
-    Info (12023): Found entity 1: PC File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 8
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file PC.vhd
+    Info (12022): Found design unit 1: PC-main File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 19
+    Info (12023): Found entity 1: PC File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 8
 Info (12127): Elaborating entity "PC" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at PC.vhd(31): signal "indice_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 31
-Warning (10492): VHDL Process Statement warning at PC.vhd(36): signal "indice_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 36
-Warning (10492): VHDL Process Statement warning at PC.vhd(36): signal "beq" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 36
-Warning (10492): VHDL Process Statement warning at PC.vhd(39): signal "indice_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at PC.vhd(39): signal "loop_valor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at PC.vhd(24): inferring latch(es) for signal or variable "indice_aux", which holds its previous value in one or more paths through the process File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[0]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[1]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[2]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[3]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[4]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[5]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[6]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
-Info (10041): Inferred latch for "indice_aux[7]" at PC.vhd(24) File: C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/PC/PC.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at PC.vhd(31): signal "indice_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at PC.vhd(36): signal "indice_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at PC.vhd(36): signal "beq" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at PC.vhd(39): signal "indice_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at PC.vhd(39): signal "loop_valor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 39
+Warning (10631): VHDL Process Statement warning at PC.vhd(24): inferring latch(es) for signal or variable "indice_aux", which holds its previous value in one or more paths through the process File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[0]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[1]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[2]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[3]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[4]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[5]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[6]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
+Info (10041): Inferred latch for "indice_aux[7]" at PC.vhd(24) File: /home/kaio/Documentos/Componentes/PC/PC.vhd Line: 24
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Wed Mar 09 19:17:25 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 792 megabytes
+    Info: Processing ended: Wed Mar  9 18:55:23 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:31
 
 

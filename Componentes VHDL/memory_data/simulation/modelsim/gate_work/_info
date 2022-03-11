@@ -1,0 +1,62 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kaio/Documentos/Componentes/memory_data/simulation/modelsim
+Ememory_data
+Z1 w1646880642
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+!i122 0
+R0
+Z9 8memory_data.vho
+Z10 Fmemory_data.vho
+l0
+L37 1
+VzFA`Dz<oA^QZj[dm209oY0
+!s100 c9koEKTZH45XUfO8>HkZC1
+Z11 OV;C;2020.1;71
+31
+!s110 1646880806
+!i10b 1
+Z12 !s108 1646880806.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|memory_data.vho|
+!s107 memory_data.vho|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 11 memory_data 0 22 zFA`Dz<oA^QZj[dm209oY0
+!i122 0
+l6220
+L74 64910
+V5LXWeBTAziiNjZL3Fb@0O3
+!s100 Z8J:?jFbTehl0n_2ZYM7g3
+R11
+31
+!s110 1646880807
+!i10b 1
+R12
+R13
+Z16 !s107 memory_data.vho|
+!i113 1
+R14
+R15

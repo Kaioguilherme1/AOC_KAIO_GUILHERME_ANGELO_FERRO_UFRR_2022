@@ -9,7 +9,7 @@ ENTITY processador_mips_8_bits IS
     PORT(
 		 reset: IN std_logic;
 		 clock: IN std_logic;
-		 indice: IN std_logic_vector(7 downto 0);
+		 --indice: IN std_logic_vector(7 downto 0);
 		 alu_result: OUT std_logic_vector(7 downto 0)
 	
     );
@@ -39,34 +39,122 @@ SIGNAL alu_src:   std_logic;
 SIGNAL alu_op:    std_logic_vector(1 downto 0);
 SIGNAL men_write: std_logic;
 
+
+
+--Declaraçao dos componentes
+
+COMPONENT PC IS
+    PORT(
+        clk, reset :IN std_logic;
+		  loop_f: IN std_logic_vector(1 downto 0);
+		  beq_f: IN std_logic_vector(1 downto 0);
+		  loop_valor : IN std_logic_vector(3 downto 0);
+		  beq : IN std_logic_vector(1 downto 0);
+		  indice: OUT std_logic_vector(7 downto 0)
+    );
+END COMPONENT;
+
+
+COMPONENT instrucoes IS
+    PORT (
+        pc : IN std_logic_vector(7 downto 0);
+        instrucao : out std_logic_vector(7 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT banco_regs IS
+	 PORT (
+		  reg_rest: in std_logic; 
+        reg_write_en: in std_logic; --reg write 1 = sim 0 = nao
+        reg_write_data: in std_logic_vector(7 downto 0); --dado a ser escrito no reg write
+        reg_write_addr: in std_logic_vector(1 downto 0); --endereço do reg write
+        reg_read_addr_1: in std_logic_vector(1 downto 0); --endereço do reg 1
+        reg_read_addr_2: in std_logic_vector(1 downto 0); --endereço do reg 2
+        reg_read_data_1: out std_logic_vector(7 downto 0); --dado do reg 1
+        reg_read_data_2: out std_logic_vector(7 downto 0) --dado do reg 2
+    );
+END COMPONENT;
+
+COMPONENT mult1x2 IS
+	PORT (
+        
+        controle: in std_logic;
+        A: in std_logic_vector(7 downto 0);
+        B: in std_logic_vector(7 downto 0);
+        saida:    out std_logic_vector(7 downto 0)
+        
+    );
+END COMPONENT;
+
+COMPONENT mult1x4 IS
+	PORT (
+        
+        controle: in std_logic_vector(1 downto 0);
+        A: in std_logic_vector(7 downto 0);
+        B: in std_logic_vector(7 downto 0);
+        C: in std_logic_vector(7 downto 0);
+        D: in std_logic_vector(7 downto 0);
+        saida:    out std_logic_vector(7 downto 0)
+        
+    );
+END COMPONENT;
+
+COMPONENT ULA IS
+	PORT(
+        a,b : in std_logic_vector(7 downto 0); -- registrador 1, registrador 2
+        alu_op : in std_logic_vector(1 downto 0); --seletor de funcao
+        alu_result: out std_logic_vector(7 downto 0); -- saida do resultado
+        zero: out std_logic_vector(1 downto 0) --saida zero
+    );
+END COMPONENT;
+
+COMPONENT memory_data IS
+	PORT(
+        mem_addr_data : IN std_logic_vector(7 downto 0);
+        mem_read_data : OUT std_logic_vector(7 downto 0);
+        mem_write_data : IN std_logic_vector(7 downto 0);
+        mem_write_enable : IN std_logic
+    );
+END COMPONENT;
+
+COMPONENT controlador IS
+	PORT(
+        op_code: IN std_logic_vector(1 downto 0);
+        func:     IN std_logic_vector(1 downto 0);
+        reg_data: out std_logic_vector(1 downto 0);
+        loop_func: out std_logic_vector(1 downto 0);
+        reg_write: out std_logic;
+        alu_src:  out std_logic;
+        alu_op:   out std_logic_vector(1 downto 0);
+        men_write: out std_logic
+    );
+END COMPONENT;
+
 BEGIN
 
---bug
-pc: ENTITY work.PC
-		port map(
-		--entradas
+p_c: PC port map(
+   	--entradas
 		clk => clock, 
 		reset => reset,
 		beq_f => zero,
-		loop_f => "00",
+		loop_f => loop_func,
 		loop_valor => instrucao_atual(5 downto 2),
 		beq => instrucao_atual(1 downto 0),
 		--saidas
 		indice => indice_aux
-   	);
+		);
 --indice_aux <= indice;
 --==================Instrucoes====================
-banco_de_instrucao: ENTITY work.instrucoes
-		port map(
-		--entradas
-		pc => indice_aux,
-		--saidas
-		instrucao => instrucao_atual
-		);
+banco_de_instrucao: instrucoes port map(
+													 --entradas
+													 pc => indice_aux,
+													 --saidas
+													 instrucao => instrucao_atual
+													 );
 		
 --==================banco regs====================
-banco_de_registradores: entity work.banco_regs
-	port map(
+banco_de_registradores: banco_regs 
+		port map(
 		--entradas
 		reg_rest => reset,
 		reg_write_en => reg_write, 
@@ -83,7 +171,7 @@ banco_de_registradores: entity work.banco_regs
 --==================mult 1x2====================
 extensao_8bits <= std_logic_vector(resize(UNSIGNED(instrucao_atual(1 downto 0)), extensao_8bits'length)); -- estende 2 para 8 bits
 
-multiplexador1x2: entity work.mult1x2
+multiplexador1x2: mult1x2
 	port map(
 		--entradas
 		controle => alu_src,
@@ -94,7 +182,7 @@ multiplexador1x2: entity work.mult1x2
 		
 	);
 --==================ULA====================
-ula: ENTITY work.ula
+unidade_de_logica_aritimetica: ula
 	port map(
 		--entradas
 		a => mult1x2_valor, -- valor 1 
@@ -108,7 +196,7 @@ ula: ENTITY work.ula
 	);
 	
 --==================Memory data====================
-Memory_data: ENTITY work.memory_data
+data_memory: memory_data
 	port map(
 		--entradas
 		mem_addr_data => saida_ULA,
@@ -121,7 +209,7 @@ Memory_data: ENTITY work.memory_data
 	);
 
 --==================mult 1x4====================
-multiplexador1x4: entity work.mult1x4
+multiplexador1x4: mult1x4
 	port map(
 		--entradas
 		controle => reg_data,
@@ -135,7 +223,7 @@ multiplexador1x4: entity work.mult1x4
 	);
 	
 --==================controlador====================
-controle: entity work.controlador
+controle: controlador
 	port map(
 		--entrada
 		op_code => instrucao_atual(7 downto 6),

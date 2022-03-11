@@ -1,4 +1,3 @@
-# Reading pref.tcl
 # do processador_mips_8_bits_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,82 +6,82 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying E:/iq/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying /home/kaio/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:39 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/banco_regs.vhdl 
+# Start time: 16:22:46 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/banco_regs.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity banco_regs
 # -- Compiling architecture Main of banco_regs
-# End time: 21:43:39 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:48 on Mar 10,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:40 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/controlador.vhd 
+# Start time: 16:22:48 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/controlador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlador
 # -- Compiling architecture Main of controlador
-# End time: 21:43:40 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:48 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:40 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/instrucoes.vhd 
+# Start time: 16:22:48 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity instrucoes
 # -- Compiling architecture Main of instrucoes
-# End time: 21:43:40 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:48 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:40 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/memory_data.vhd 
+# Start time: 16:22:48 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/memory_data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory_data
 # -- Compiling architecture Main of memory_data
-# End time: 21:43:40 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:48 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:40 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x2.vhd 
+# Start time: 16:22:48 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mult1x2
 # -- Compiling architecture Main of mult1x2
-# End time: 21:43:40 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:48 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:40 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/mult1x4.vhd 
+# Start time: 16:22:48 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/mult1x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mult1x4
 # -- Compiling architecture Main of mult1x4
-# End time: 21:43:41 on Mar 09,2022, Elapsed time: 0:00:01
+# End time: 16:22:48 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:41 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/ula.vhd 
+# Start time: 16:22:48 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -90,12 +89,12 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ULA
 # -- Compiling architecture Main of ULA
-# End time: 21:43:41 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:49 on Mar 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/PC.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/PC.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:41 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/PC.vhd 
+# Start time: 16:22:49 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/PC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -104,12 +103,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PC
 # -- Compiling architecture main of PC
-# End time: 21:43:41 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:49 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd}
+# vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:43:41 on Mar 09,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/CASA/Documents/GitHub/AOC_KAIO_GUILHERME_ANGELO_FERRO_UFRR_2022/Componentes VHDL/processador_mips_8_bits/processador_mips_8_bits.vhd 
+# Start time: 16:22:49 on Mar 10,2022
+# vcom -reportprogress 300 -93 -work work /home/kaio/Documentos/Componentes/processador_mips_8_bits/processador_mips_8_bits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -126,6 +125,27 @@
 # -- Loading entity memory_data
 # -- Loading entity mult1x4
 # -- Loading entity controlador
-# End time: 21:43:41 on Mar 09,2022, Elapsed time: 0:00:00
+# End time: 16:22:49 on Mar 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+vsim rtl_work.processador_mips_8_bits
+# vsim rtl_work.processador_mips_8_bits 
+# Start time: 16:23:09 on Mar 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.processador_mips_8_bits(main)
+# Loading rtl_work.pc(main)
+# Loading rtl_work.instrucoes(main)
+# Loading rtl_work.banco_regs(main)
+# Loading rtl_work.mult1x2(main)
+# Loading rtl_work.ula(main)
+# Loading rtl_work.memory_data(main)
+# Loading rtl_work.mult1x4(main)
+# Loading rtl_work.controlador(main)
+add wave -position end  sim:/processador_mips_8_bits/clock
+# End time: 16:23:39 on Mar 10,2022, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0

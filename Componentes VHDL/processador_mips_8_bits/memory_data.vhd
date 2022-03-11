@@ -14,7 +14,7 @@ END memory_data;
 
 ARCHITECTURE Main OF memory_data IS
 TYPE data_mem IS ARRAY(0 to 255 ) OF std_logic_vector (7 downto 0);
-SIGNAL ram: data_mem :=((others=> (others=>'0')));
+SIGNAL ram: data_mem;
 BEGIN
     PROCESS (mem_write_data, mem_write_enable)
     BEGIN

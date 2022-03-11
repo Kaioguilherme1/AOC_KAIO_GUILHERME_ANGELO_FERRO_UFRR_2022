@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim
+Econtrolador
+Z1 w1646946358
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+!i122 8
+R0
+Z9 8processador_mips_8_bits.vho
+Z10 Fprocessador_mips_8_bits.vho
+l0
+Z11 L37 1
+VMc9[IHdMd_CSFBjjcgi?W3
+!s100 `[^VMn;PkjIC4A]@OPNz63
+Z12 OV;C;2020.1;71
+32
+Z13 !s110 1646946359
+!i10b 1
+Z14 !s108 1646946359.000000
+Z15 !s90 -work|work|processador_mips_8_bits.vho|
+Z16 !s107 processador_mips_8_bits.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 11 controlador 0 22 Mc9[IHdMd_CSFBjjcgi?W3
+!i122 8
+l93
+L50 342
+VAdeczENP?afBNJiiSBUBk1
+!s100 LKdGWmz7^PmeE?=KdLYLi3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Econtrolador_vhd_vec_tst
+Z19 w1646946357
+R6
+R7
+!i122 9
+R0
+Z20 8Waveform1.vwf.vht
+Z21 FWaveform1.vwf.vht
+l0
+Z22 L32 1
+VeFB8nFUES7UNZ>Qnle[200
+!s100 Lo];OBdeY4GhQzM<OEINe1
+R12
+32
+R13
+!i10b 1
+R14
+Z23 !s90 -work|work|Waveform1.vwf.vht|
+Z24 !s107 Waveform1.vwf.vht|
+!i113 1
+R17
+R18
+Acontrolador_arch
+R6
+R7
+DEx4 work 23 controlador_vhd_vec_tst 0 22 eFB8nFUES7UNZ>Qnle[200
+!i122 9
+l57
+L34 61
+Vz3QBZUY<kk][>SB]<5RI00
+!s100 ]d3G:W<cP0a[0=9Wkj2mk2
+R12
+32
+R13
+!i10b 1
+R14
+R23
+R24
+!i113 1
+R17
+R18
+Eprocessador_mips_8_bits
+Z25 w1646953251
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+!i122 16
+R0
+R9
+R10
+l0
+R11
+VP5hXo6:0;aB6OJI;^UJZM2
+!s100 o0SCQN]ShRMCjbH4j0M@Z1
+R12
+32
+!s110 1646953252
+!i10b 1
+Z26 !s108 1646953252.000000
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 23 processador_mips_8_bits 0 22 P5hXo6:0;aB6OJI;^UJZM2
+!i122 16
+l6417
+L58 69567
+VV;KC89fP03XWHo=Z:<=Gn0
+!s100 7i5OE>6H_j@`6U8^Qb9aZ2
+R12
+32
+!s110 1646953253
+!i10b 1
+R26
+R15
+R16
+!i113 1
+R17
+R18
+Eprocessador_mips_8_bits_vhd_vec_tst
+Z27 w1646953248
+R6
+R7
+!i122 17
+R0
+Z28 8test.vwf.vht
+Z29 Ftest.vwf.vht
+l0
+R22
+VjVIVI7IG^:8KP86;63F9O2
+!s100 AXhXW1@jFj2<lAhBM=?aA3
+R12
+32
+Z30 !s110 1646953254
+!i10b 1
+Z31 !s108 1646953254.000000
+Z32 !s90 -work|work|test.vwf.vht|
+Z33 !s107 test.vwf.vht|
+!i113 1
+R17
+R18
+Aprocessador_mips_8_bits_arch
+R6
+R7
+Z34 DEx4 work 35 processador_mips_8_bits_vhd_vec_tst 0 22 jVIVI7IG^:8KP86;63F9O2
+!i122 17
+l47
+Z35 L34 41
+VcY7JC<JA<c748PXhZ81RV2
+!s100 9eg8ojoKZ6e9>h[o[?LQ?3
+R12
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R17
+R18

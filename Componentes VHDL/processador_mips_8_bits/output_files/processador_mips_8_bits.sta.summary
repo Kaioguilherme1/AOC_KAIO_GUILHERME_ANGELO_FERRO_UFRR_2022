@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'PC:p_c|indice_aux[0]'
+Slack : -13.226
+TNS   : -22277.414
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -12.815
+TNS   : -63.238
+
+Type  : Slow 1100mV 85C Model Hold 'PC:p_c|indice_aux[0]'
+Slack : 0.747
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PC:p_c|indice_aux[0]'
+Slack : -1.346
+TNS   : -3199.294
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'PC:p_c|indice_aux[0]'
+Slack : -13.305
+TNS   : -22393.926
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -12.703
+TNS   : -62.855
+
+Type  : Slow 1100mV 0C Model Hold 'PC:p_c|indice_aux[0]'
+Slack : 0.487
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 1.476
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PC:p_c|indice_aux[0]'
+Slack : -1.371
+TNS   : -3578.989
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'PC:p_c|indice_aux[0]'
+Slack : -6.305
+TNS   : -10418.832
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -5.767
+TNS   : -27.701
+
+Type  : Fast 1100mV 85C Model Hold 'PC:p_c|indice_aux[0]'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PC:p_c|indice_aux[0]'
+Slack : -0.583
+TNS   : -713.898
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.251
+TNS   : -2.515
+
+Type  : Fast 1100mV 0C Model Setup 'PC:p_c|indice_aux[0]'
+Slack : -5.708
+TNS   : -9364.641
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -5.029
+TNS   : -24.195
+
+Type  : Fast 1100mV 0C Model Hold 'PC:p_c|indice_aux[0]'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PC:p_c|indice_aux[0]'
+Slack : -0.421
+TNS   : -437.546
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.222
+TNS   : -2.260
+
+------------------------------------------------------------

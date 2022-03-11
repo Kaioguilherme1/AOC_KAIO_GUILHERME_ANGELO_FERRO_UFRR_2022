@@ -1,26 +1,18 @@
 |processador_mips_8_bits
-reset => pc:pc.reset
+reset => PC:p_c.reset
 reset => banco_regs:banco_de_registradores.reg_rest
-clock => pc:pc.clk
-indice[0] => ~NO_FANOUT~
-indice[1] => ~NO_FANOUT~
-indice[2] => ~NO_FANOUT~
-indice[3] => ~NO_FANOUT~
-indice[4] => ~NO_FANOUT~
-indice[5] => ~NO_FANOUT~
-indice[6] => ~NO_FANOUT~
-indice[7] => ~NO_FANOUT~
-alu_result[0] <= ula:ula.alu_result[0]
-alu_result[1] <= ula:ula.alu_result[1]
-alu_result[2] <= ula:ula.alu_result[2]
-alu_result[3] <= ula:ula.alu_result[3]
-alu_result[4] <= ula:ula.alu_result[4]
-alu_result[5] <= ula:ula.alu_result[5]
-alu_result[6] <= ula:ula.alu_result[6]
-alu_result[7] <= ula:ula.alu_result[7]
+clock => PC:p_c.clk
+alu_result[0] << ULA:unidade_de_logica_aritimetica.alu_result[0]
+alu_result[1] << ULA:unidade_de_logica_aritimetica.alu_result[1]
+alu_result[2] << ULA:unidade_de_logica_aritimetica.alu_result[2]
+alu_result[3] << ULA:unidade_de_logica_aritimetica.alu_result[3]
+alu_result[4] << ULA:unidade_de_logica_aritimetica.alu_result[4]
+alu_result[5] << ULA:unidade_de_logica_aritimetica.alu_result[5]
+alu_result[6] << ULA:unidade_de_logica_aritimetica.alu_result[6]
+alu_result[7] << ULA:unidade_de_logica_aritimetica.alu_result[7]
 
 
-|processador_mips_8_bits|PC:pc
+|processador_mips_8_bits|PC:p_c
 clk => indice_aux[0].OUTPUTSELECT
 clk => indice_aux[1].OUTPUTSELECT
 clk => indice_aux[2].OUTPUTSELECT
@@ -261,7 +253,7 @@ saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[7] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processador_mips_8_bits|ULA:ula
+|processador_mips_8_bits|ULA:unidade_de_logica_aritimetica
 a[0] => Add0.IN16
 a[0] => Equal0.IN7
 a[0] => Add1.IN8
@@ -346,7 +338,7 @@ zero[0] <= zero[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 zero[1] <= zero[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processador_mips_8_bits|memory_data:Memory_data
+|processador_mips_8_bits|memory_data:data_memory
 mem_addr_data[0] => ram.RADDR
 mem_addr_data[0] => ram.WADDR
 mem_addr_data[1] => ram.RADDR1
