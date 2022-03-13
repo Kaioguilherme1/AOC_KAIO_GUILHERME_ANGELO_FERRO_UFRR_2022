@@ -59,12 +59,13 @@ set_global_assignment -name VHDL_FILE banco_regs.vhdl
 set_global_assignment -name VHDL_FILE controlador.vhd
 set_global_assignment -name VHDL_FILE instrucoes.vhd
 set_global_assignment -name VHDL_FILE memory_data.vhd
-set_global_assignment -name VHDL_FILE mult1x2.vhd
 set_global_assignment -name VHDL_FILE mult1x4.vhd
 set_global_assignment -name VHDL_FILE ula.vhd
-set_global_assignment -name VHDL_FILE PC.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
+set_global_assignment -name VHDL_FILE PC_count.vhd
+set_global_assignment -name VHDL_FILE controlador_de_salto.vhd
+set_global_assignment -name VHDL_FILE seletor1x2.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf

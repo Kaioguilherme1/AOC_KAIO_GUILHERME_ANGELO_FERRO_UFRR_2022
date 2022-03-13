@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/10/2022 19:00:47"
+-- Generated on "03/13/2022 16:51:26"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          processador_mips_8_bits
+-- Vhdl Test Bench(with test vectors) for design  :          seletor1x2
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,46 +29,85 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY processador_mips_8_bits_vhd_vec_tst IS
-END processador_mips_8_bits_vhd_vec_tst;
-ARCHITECTURE processador_mips_8_bits_arch OF processador_mips_8_bits_vhd_vec_tst IS
+ENTITY seletor1x2_vhd_vec_tst IS
+END seletor1x2_vhd_vec_tst;
+ARCHITECTURE seletor1x2_arch OF seletor1x2_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL alu_result : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL clock : STD_LOGIC;
-SIGNAL reset : STD_LOGIC;
-COMPONENT processador_mips_8_bits
+SIGNAL controle : STD_LOGIC;
+SIGNAL entrada : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL saidaA : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL saidaB : STD_LOGIC_VECTOR(7 DOWNTO 0);
+COMPONENT seletor1x2
 	PORT (
-	alu_result : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
-	clock : IN STD_LOGIC;
-	reset : IN STD_LOGIC
+	controle : IN STD_LOGIC;
+	entrada : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+	saidaA : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	saidaB : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : processador_mips_8_bits
+	i1 : seletor1x2
 	PORT MAP (
 -- list connections between master ports and signals
-	alu_result => alu_result,
-	clock => clock,
-	reset => reset
+	controle => controle,
+	entrada => entrada,
+	saidaA => saidaA,
+	saidaB => saidaB
 	);
 
--- clock
-t_prcs_clock: PROCESS
+-- controle
+t_prcs_controle: PROCESS
 BEGIN
-LOOP
-	clock <= '0';
-	WAIT FOR 10000 ps;
-	clock <= '1';
-	WAIT FOR 10000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
-END PROCESS t_prcs_clock;
-
--- reset
-t_prcs_reset: PROCESS
-BEGIN
-	reset <= '1';
+	controle <= '0';
 WAIT;
-END PROCESS t_prcs_reset;
-END processador_mips_8_bits_arch;
+END PROCESS t_prcs_controle;
+-- entrada[7]
+t_prcs_entrada_7: PROCESS
+BEGIN
+	entrada(7) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_7;
+-- entrada[6]
+t_prcs_entrada_6: PROCESS
+BEGIN
+	entrada(6) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_6;
+-- entrada[5]
+t_prcs_entrada_5: PROCESS
+BEGIN
+	entrada(5) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_5;
+-- entrada[4]
+t_prcs_entrada_4: PROCESS
+BEGIN
+	entrada(4) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_4;
+-- entrada[3]
+t_prcs_entrada_3: PROCESS
+BEGIN
+	entrada(3) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_3;
+-- entrada[2]
+t_prcs_entrada_2: PROCESS
+BEGIN
+	entrada(2) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_2;
+-- entrada[1]
+t_prcs_entrada_1: PROCESS
+BEGIN
+	entrada(1) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_1;
+-- entrada[0]
+t_prcs_entrada_0: PROCESS
+BEGIN
+	entrada(0) <= '0';
+WAIT;
+END PROCESS t_prcs_entrada_0;
+END seletor1x2_arch;

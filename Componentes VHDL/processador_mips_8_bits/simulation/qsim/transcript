@@ -1,7 +1,7 @@
 # do processador_mips_8_bits.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:52 on Mar 10,2022
+# Start time: 16:51:29 on Mar 13,2022
 # vcom -work work processador_mips_8_bits.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -11,38 +11,36 @@
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity processador_mips_8_bits
-# -- Compiling architecture structure of processador_mips_8_bits
-# End time: 19:00:54 on Mar 10,2022, Elapsed time: 0:00:02
+# -- Compiling entity seletor1x2
+# -- Compiling architecture structure of seletor1x2
+# End time: 16:51:29 on Mar 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:54 on Mar 10,2022
+# Start time: 16:51:29 on Mar 13,2022
 # vcom -work work test.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity processador_mips_8_bits_vhd_vec_tst
-# -- Compiling architecture processador_mips_8_bits_arch of processador_mips_8_bits_vhd_vec_tst
-# End time: 19:00:54 on Mar 10,2022, Elapsed time: 0:00:00
+# -- Compiling entity seletor1x2_vhd_vec_tst
+# -- Compiling architecture seletor1x2_arch of seletor1x2_vhd_vec_tst
+# End time: 16:51:29 on Mar 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.processador_mips_8_bits_vhd_vec_tst 
-# Start time: 19:00:54 on Mar 10,2022
+# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.PC_vhd_vec_tst 
+# Start time: 16:51:29 on Mar 13,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.processador_mips_8_bits_vhd_vec_tst(processador_mips_8_bits_arch)
+# Loading work.pc_vhd_vec_tst(pc_arch)
 # Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.processador_mips_8_bits(structure)
+# Loading work.pc(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 675165 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
 # after#32
-# End time: 19:00:57 on Mar 10,2022, Elapsed time: 0:00:03
-# Errors: 0, Warnings: 1
+# End time: 16:51:29 on Mar 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

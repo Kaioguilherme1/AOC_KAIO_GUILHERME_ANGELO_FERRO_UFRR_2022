@@ -7,7 +7,7 @@ USE IEEE.numeric_std.all;
 
 ENTITY banco_regs IS
     PORT (
-		  reg_rest: in std_logic; 
+		  
         reg_write_en: in std_logic; --reg write 1 = sim 0 = nao
         reg_write_data: in std_logic_vector(7 downto 0); --dado a ser escrito no reg write
         reg_write_addr: in std_logic_vector(1 downto 0); --endereço do reg write
@@ -29,15 +29,9 @@ BEGIN
     reg_read_data_1 <= reg_array(to_integer(unsigned(reg_read_addr_1)));
     reg_read_data_2 <= reg_array(to_integer(unsigned(reg_read_addr_2)));
 
-    PROCESS(reg_rest,reg_write_en,reg_write_addr,reg_write_data) 
+    PROCESS(reg_write_en,reg_write_addr,reg_write_data) 
     BEGIN
-		  IF(reg_rest = '1') THEN
-				reg_array(0) <= "00000101"; --5
-				reg_array(1) <= "00000011"; --3
-				reg_array(2) <= "00000010"; --2
-				reg_array(3) <= "00000000";
-				
-        ELSIF(reg_write_en='1') THEN
+        IF(reg_write_en='1') THEN
             reg_array(to_integer(unsigned(reg_write_addr))) <= reg_write_data;
         END IF;
     END PROCESS;

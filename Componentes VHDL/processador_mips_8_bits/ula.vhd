@@ -15,7 +15,7 @@ END ULA;
 
 ARCHITECTURE Main OF ULA IS
 BEGIN
-    PROCESS(alu_op,a,b)
+    PROCESS(alu_op)
     BEGIN
         CASE alu_op IS
             WHEN "00" =>
@@ -29,7 +29,11 @@ BEGIN
                     zero <= "00";
                 END IF;
             WHEN "11" =>
-                alu_result <= a + b; -- add
+                IF(a /= b) THEN
+                    zero <= "01";
+                ELSE
+                    zero <= "00";
+					 END IF;
             WHEN OTHERS => alu_result <= a + b; -- add
         END CASE;
     END PROCESS;

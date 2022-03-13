@@ -7,7 +7,8 @@ USE IEEE.numeric_std.ALL;
 ENTITY instrucoes IS
     PORT (
         pc : IN std_logic_vector(7 downto 0);
-        instrucao : out std_logic_vector(7 downto 0)
+        instrucao : out std_logic_vector(7 downto 0);
+		  instrucao_dado : out std_logic_vector(7 downto 0)
     );
 END instrucoes;
 
@@ -30,6 +31,6 @@ BEGIN
 
     indice <= TO_INTEGER(UNSIGNED(pc));
 	 instrucao <= fila_de_execucao(indice);
-    
+    instrucao_dado <= fila_de_execucao(indice + 1);
     
 END Main;

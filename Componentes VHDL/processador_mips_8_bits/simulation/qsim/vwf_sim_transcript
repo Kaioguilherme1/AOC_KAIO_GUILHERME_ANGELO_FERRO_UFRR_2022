@@ -9,16 +9,14 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off processador_mips_8_bits -c processador_mips_8_bits --vector_source="/home/kaio/Documentos/Componentes/processador_mips_8_bits/test.vwf" --testbench_file="/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/test.vwf.vht"
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details, at    Info: https://fpgasoftware.intel.com/eula.    Info: Processing started: Thu Mar 10 19:00:46 2022Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off processador_mips_8_bits -c processador_mips_8_bits --vector_source=/home/kaio/Documentos/Componentes/processador_mips_8_bits/test.vwf --testbench_file=/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/test.vwf.vhtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-
-nco_regs:banco_de_registradores|reg_array[3][7]" in design
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details, at    Info: https://fpgasoftware.intel.com/eula.    Info: Processing started: Sun Mar 13 16:51:26 2022Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off processador_mips_8_bits -c processador_mips_8_bits --vector_source=/home/kaio/Documentos/Componentes/processador_mips_8_bits/test.vwf --testbench_file=/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/test.vwf.vhtInfo (119006): Selected device 5CGXFC7C7F23C8 for design "processador_mips_8_bits"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
 quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/" processador_mips_8_bits -c processador_mips_8_bits
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details, at    Info: https://fpgasoftware.intel.com/eula.    Info: Processing started: Thu Mar 10 19:00:49 2022Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/ processador_mips_8_bits -c processador_mips_8_bitsWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file processador_mips_8_bits.vho in folder "/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 698 megabytes    Info: Processing ended: Thu Mar 10 19:00:51 2022    Info: Elapsed time: 00:00:02    Info: Total CPU time (on all processors): 00:00:02
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details, at    Info: https://fpgasoftware.intel.com/eula.    Info: Processing started: Sun Mar 13 16:51:27 2022Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/ processador_mips_8_bits -c processador_mips_8_bitsInfo (119006): Selected device 5CGXFC7C7F23C8 for design "processador_mips_8_bits"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file processador_mips_8_bits.vho in folder "/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 678 megabytes    Info: Processing ended: Sun Mar 13 16:51:28 2022    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
@@ -35,8 +33,7 @@ Reading pref.tcl
 # 2020.1
 # do processador_mips_8_bits.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:52 on Mar 10,2022# vcom -work work processador_mips_8_bits.vho 
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020# Start time: 16:51:29 on Mar 13,2022# vcom -work work processador_mips_8_bits.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -44,21 +41,17 @@ Reading pref.tcl
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack# -- Loading package cyclonev_components
-# -- Compiling entity processador_mips_8_bits
-# -- Compiling architecture structure of processador_mips_8_bits
-# End time: 19:00:54 on Mar 10,2022, Elapsed time: 0:00:02
+# -- Compiling entity seletor1x2# -- Compiling architecture structure of seletor1x2
+# End time: 16:51:29 on Mar 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:54 on Mar 10,2022# vcom -work work test.vwf.vht 
-# -- Loading package STANDARD
+# Start time: 16:51:29 on Mar 13,2022# vcom -work work test.vwf.vht # -- Loading package STANDARD
 # -- Loading package TEXTIO
-# -- Loading package std_logic_1164# -- Compiling entity processador_mips_8_bits_vhd_vec_tst
-# -- Compiling architecture processador_mips_8_bits_arch of processador_mips_8_bits_vhd_vec_tst
-# End time: 19:00:54 on Mar 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.processador_mips_8_bits_vhd_vec_tst # Start time: 19:00:54 on Mar 10,2022# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.processador_mips_8_bits_vhd_vec_tst(processador_mips_8_bits_arch)# Loading altera_lnsim.altera_lnsim_components# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading cyclonev.cyclonev_atom_pack(body)# Loading cyclonev.cyclonev_components# Loading work.processador_mips_8_bits(structure)# Loading ieee.std_logic_arith(body)# Loading cyclonev.cyclonev_io_obuf(arch)# Loading cyclonev.cyclonev_io_ibuf(arch)# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)# ** Warning: Design size of 675165 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# -- Loading package std_logic_1164# -- Compiling entity seletor1x2_vhd_vec_tst# -- Compiling architecture seletor1x2_arch of seletor1x2_vhd_vec_tst
+# End time: 16:51:29 on Mar 13,2022, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.PC_vhd_vec_tst # Start time: 16:51:29 on Mar 13,2022# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.pc_vhd_vec_tst(pc_arch)# Loading altera_lnsim.altera_lnsim_components# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading cyclonev.cyclonev_atom_pack(body)# Loading cyclonev.cyclonev_components# Loading work.pc(structure)# Loading ieee.std_logic_arith(body)# Loading cyclonev.cyclonev_io_obuf(arch)# Loading cyclonev.cyclonev_io_ibuf(arch)# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # after#32
-# End time: 19:00:57 on Mar 10,2022, Elapsed time: 0:00:03# Errors: 0, Warnings: 1
+# End time: 16:51:29 on Mar 13,2022, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
@@ -69,131 +62,57 @@ Reading /home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsi
 
 Processing channel transitions... 
 
-Warning: PC:p_c|indice_aux[7] - signal not found in VCD.
+Warning: controle - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[6] - signal not found in VCD.
+Warning: entrada[7] - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[5] - signal not found in VCD.
+Warning: entrada[6] - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[4] - signal not found in VCD.
+Warning: entrada[5] - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[3] - signal not found in VCD.
+Warning: entrada[4] - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[2] - signal not found in VCD.
+Warning: entrada[3] - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[1] - signal not found in VCD.
+Warning: entrada[2] - signal not found in VCD.
 
-Warning: PC:p_c|indice_aux[0] - signal not found in VCD.
+Warning: entrada[1] - signal not found in VCD.
 
-Warning: valor_reg1[7] - signal not found in VCD.
+Warning: entrada[0] - signal not found in VCD.
 
-Warning: valor_reg1[6] - signal not found in VCD.
+Warning: saidaA[7] - signal not found in VCD.
 
-Warning: valor_reg1[5] - signal not found in VCD.
+Warning: saidaA[6] - signal not found in VCD.
 
-Warning: valor_reg1[4] - signal not found in VCD.
+Warning: saidaA[5] - signal not found in VCD.
 
-Warning: valor_reg1[3] - signal not found in VCD.
+Warning: saidaA[4] - signal not found in VCD.
 
-Warning: valor_reg1[2] - signal not found in VCD.
+Warning: saidaA[3] - signal not found in VCD.
 
-Warning: valor_reg1[1] - signal not found in VCD.
+Warning: saidaA[2] - signal not found in VCD.
 
-Warning: valor_reg1[0] - signal not found in VCD.
+Warning: saidaA[1] - signal not found in VCD.
 
-Warning: valor_reg2[7] - signal not found in VCD.
+Warning: saidaA[0] - signal not found in VCD.
 
-Warning: valor_reg2[6] - signal not found in VCD.
+Warning: saidaB[7] - signal not found in VCD.
 
-Warning: valor_reg2[5] - signal not found in VCD.
+Warning: saidaB[6] - signal not found in VCD.
 
-Warning: valor_reg2[4] - signal not found in VCD.
+Warning: saidaB[5] - signal not found in VCD.
 
-Warning: valor_reg2[3] - signal not found in VCD.
+Warning: saidaB[4] - signal not found in VCD.
 
-Warning: valor_reg2[2] - signal not found in VCD.
+Warning: saidaB[3] - signal not found in VCD.
 
-Warning: valor_reg2[1] - signal not found in VCD.
+Warning: saidaB[2] - signal not found in VCD.
 
-Warning: valor_reg2[0] - signal not found in VCD.
+Warning: saidaB[1] - signal not found in VCD.
 
-Warning: saida_memory[7] - signal not found in VCD.
+Warning: saidaB[0] - signal not found in VCD.
 
-Warning: saida_memory[6] - signal not found in VCD.
-
-Warning: saida_memory[5] - signal not found in VCD.
-
-Warning: saida_memory[4] - signal not found in VCD.
-
-Warning: saida_memory[3] - signal not found in VCD.
-
-Warning: saida_memory[2] - signal not found in VCD.
-
-Warning: saida_memory[1] - signal not found in VCD.
-
-Warning: saida_memory[0] - signal not found in VCD.
-
-Warning: saida_ULA[7] - signal not found in VCD.
-
-Warning: saida_ULA[6] - signal not found in VCD.
-
-Warning: saida_ULA[5] - signal not found in VCD.
-
-Warning: saida_ULA[4] - signal not found in VCD.
-
-Warning: saida_ULA[3] - signal not found in VCD.
-
-Warning: saida_ULA[2] - signal not found in VCD.
-
-Warning: saida_ULA[1] - signal not found in VCD.
-
-Warning: saida_ULA[0] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][7] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][6] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][5] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][4] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][3] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][2] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][1] - signal not found in VCD.
-
-Warning: banco_regs:banco_de_registradores|reg_array[2][0] - signal not found in VCD.
-
-Warning: controlador:controle|alu_op[1] - signal not found in VCD.
-
-Warning: controlador:controle|alu_op[0] - signal not found in VCD.
-
-Warning: controlador:controle|loop_func[1] - signal not found in VCD.
-
-Warning: controlador:controle|loop_func[0] - signal not found in VCD.
-
-Warning: controlador:controle|op_code[1] - signal not found in VCD.
-
-Warning: controlador:controle|op_code[0] - signal not found in VCD.
-
-Warning: instrucao_atual[7] - signal not found in VCD.
-
-Warning: instrucao_atual[6] - signal not found in VCD.
-
-Warning: instrucao_atual[5] - signal not found in VCD.
-
-Warning: instrucao_atual[4] - signal not found in VCD.
-
-Warning: instrucao_atual[3] - signal not found in VCD.
-
-Warning: instrucao_atual[2] - signal not found in VCD.
-
-Warning: instrucao_atual[1] - signal not found in VCD.
-
-Warning: instrucao_atual[0] - signal not found in VCD.
-
-Writing the resulting VWF to /home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/processador_mips_8_bits_20220310190057.sim.vwf
+Writing the resulting VWF to /home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/processador_mips_8_bits_20220313165129.sim.vwf
 
 Finished VCD to VWF conversion.
 

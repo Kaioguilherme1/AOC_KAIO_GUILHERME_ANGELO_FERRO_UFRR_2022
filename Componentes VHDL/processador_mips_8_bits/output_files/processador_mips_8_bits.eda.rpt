@@ -1,5 +1,5 @@
 EDA Netlist Writer report for processador_mips_8_bits
-Thu Mar 10 19:00:51 2022
+Sun Mar 13 16:51:28 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar 10 19:00:51 2022 ;
+; EDA Netlist Writer Status ; Successful - Sun Mar 13 16:51:28 2022 ;
 ; Revision Name             ; processador_mips_8_bits               ;
-; Top-level Entity Name     ; processador_mips_8_bits               ;
+; Top-level Entity Name     ; seletor1x2                            ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -95,14 +95,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Mar 10 19:00:49 2022
+    Info: Processing started: Sun Mar 13 16:51:27 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim/ processador_mips_8_bits -c processador_mips_8_bits
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "processador_mips_8_bits"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file processador_mips_8_bits.vho in folder "/home/kaio/Documentos/Componentes/processador_mips_8_bits/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 698 megabytes
-    Info: Processing ended: Thu Mar 10 19:00:51 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 678 megabytes
+    Info: Processing ended: Sun Mar 13 16:51:28 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
