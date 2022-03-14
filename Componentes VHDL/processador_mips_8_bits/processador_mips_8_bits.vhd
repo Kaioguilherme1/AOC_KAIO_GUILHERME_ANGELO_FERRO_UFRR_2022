@@ -1,4 +1,4 @@
---ULA com 4 funções
+--processador KARR
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_signed.all;
@@ -9,7 +9,7 @@ ENTITY processador_mips_8_bits IS
     PORT(
 		 reset: IN std_logic;
 		 clock: IN std_logic;
-		 indice: IN std_logic_vector(7 downto 0);
+		 --indice: IN std_logic_vector(7 downto 0);
 		 alu_result: OUT std_logic_vector(7 downto 0)
     );
 END processador_mips_8_bits;
@@ -27,8 +27,6 @@ SIGNAL saida_ULA: std_logic_vector(7 downto 0);
 SIGNAL saida_memory: std_logic_vector(7 downto 0);
 SIGNAL extensao_8bits: std_logic_vector(7 downto 0);
 SIGNAL indice_aux: std_logic_vector(7 downto 0);
-SIGNAL indice_aux1: std_logic_vector(7 downto 0);
-SIGNAL indice_aux2: std_logic_vector(7 downto 0);
 
 SIGNAL zero: std_logic_vector(1 downto 0);
 SIGNAL saidaA_seletor: std_logic_vector(7 downto 0);
@@ -46,22 +44,14 @@ SIGNAL men_write: std_logic;
 
 --Declaraçao dos componentes
 
-COMPONENT PC_count IS
-    PORT(
-        clk: IN std_logic;
-		  indice_entrada: IN std_logic_vector(7 downto 0);
-		  indice_saida: OUT std_logic_vector(7 downto 0)
-    );
-END COMPONENT;
-
-COMPONENT controlador_de_salto IS
-    PORT(
-        beq: IN std_logic_vector(1 downto 0);
-		  loop_valor: IN std_logic_vector(3 downto 0);
+COMPONENT PC IS
+   PORT(
+        clk, reset :IN std_logic;
+		  loop_f: IN std_logic_vector(1 downto 0);
 		  beq_f: IN std_logic_vector(1 downto 0);
-		  salto_f: IN std_logic_vector(1 downto 0);
-		  indice_entrada: IN std_logic_vector(7 downto 0);
-		  indice_saida: OUT std_logic_vector(7 downto 0)
+		  loop_valor : IN std_logic_vector(3 downto 0);
+		  beq : IN std_logic_vector(1 downto 0);
+		  indice: OUT std_logic_vector(7 downto 0)
     );
 END COMPONENT;
 
@@ -144,25 +134,17 @@ BEGIN
 
 --indice_aux <= indice;
 --==================Program counter====================
-progam_counter: PC_count port map(
-   	--entradas
-		clk => clock,
-		indice_entrada => indice_aux1,
-		--saidas
-		indice_saida => indice_aux2
-		);
-
---==================controlador de salto====================
-jump: controlador_de_salto port map(
-		  beq => instrucao_atual(1 downto 0),
-		  loop_valor => instrucao_atual(5 downto 2),
+p_counter: PC port map(
+		  clk => clock,
+		  reset => reset,
+		  loop_f => loop_func,
 		  beq_f => zero,
-		  salto_f => loop_func,
-		  indice_entrada => indice_aux1,
-		  indice_saida => indice_aux2
+		  loop_valor => instrucao_atual(5 downto 2),
+		  beq => instrucao_atual(1 downto 0),
+		  indice => indice_aux
 		);
 
-indice_aux <= indice_aux1;
+
 --==================Instrucoes====================
 banco_de_instrucao: instrucoes port map(
 													 --entradas

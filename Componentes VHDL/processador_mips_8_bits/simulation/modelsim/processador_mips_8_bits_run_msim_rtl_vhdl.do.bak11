@@ -5,5 +5,5 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/ula.vhd}
+vcom -93 -work work {/home/kaio/Documentos/Componentes/processador_mips_8_bits/instrucoes.vhd}
 

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Mar 10 18:46:29 2022
+Fitter Status : Successful - Mon Mar 14 10:43:45 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : processador_mips_8_bits
 Top-level Entity Name : processador_mips_8_bits
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 1,932 / 56,480 ( 3 % )
+Logic utilization (in ALMs) : 32 / 56,480 ( < 1 % )
 Total registers : 0
 Total pins : 10 / 268 ( 4 % )
 Total virtual pins : 0
